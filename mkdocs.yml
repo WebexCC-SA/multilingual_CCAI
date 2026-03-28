@@ -1,6 +1,6 @@
 ---
-site_name: "Building a multilingual customer experience for your CC, powered by IA" # This must begin with the session ID, e.g. LABXXX-1234 This is my Cisco Live Lab
-site_description: "Building a multilingual customer experience for your CC, powered by IA" # must be same as "site_name"
+site_name: "LTRCCT-2001: Demystifying Multilingual Omnichannel Experiences with Webex Contact Center AI" # This must begin with the session ID, e.g. LABXXX-1234 This is my Cisco Live Lab
+site_description: "LTRCCT-2001: Building a Multilingual Customer Experience for your CC, powered by IA" # must be same as "site_name"
 site_author: Senthilkumar Thangavel
 copyright: Copyright &copy; 2025 Cisco
 theme:

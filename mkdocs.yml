@@ -1,8 +1,8 @@
 ---
 site_name: "LTRCCT-2001: Demystifying Multilingual Omnichannel Experiences with Webex Contact Center AI" # This must begin with the session ID, e.g. LABXXX-1234 This is my Cisco Live Lab
-site_description: "LTRCCT-2001: Building a Multilingual Customer Experience for your CC, powered by IA" # must be same as "site_name"
-site_author: Senthilkumar Thangavel
-copyright: Copyright &copy; 2025 Cisco
+site_description: "LTRCCT-2001: Demystifying Multilingual Omnichannel Experiences with Webex Contact Center AI" # must be same as "site_name"
+site_author: Carolina Morales
+copyright: Copyright &copy; 2026 Cisco
 theme:
   name: material
   features:
@@ -12,9 +12,10 @@ theme:
     - navigation.instant
     - navigation.top
     - navigation.footer
+    - navigation.sections
+    - navigation.collapse
     - search.suggest
     - content.code.copy
-    - toc.integrate
   custom_dir: docs/overrides
   palette:
     # Palette toggle for light mode
@@ -84,13 +85,20 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-nav:
-  - Home: index.md
-  - Lab:
-      - Overview: overview.md
-      - Lab 1 - Getting Started: lab1_getting_started.md
+nav: 
+  - Overview:
+        - Learining Objectives: overview.md
+        - Learning Deliverables: deliverables.md
+        - Lab Access & Instructions: access.md
+        - Customer Scenario: scenario.md
+  - Activities:
+      - Getting Started: getting_started.md
+      - Lab 1 - Multilingual Voice AI: voice.md
+      - Lab 2 - Digital Patient Journey: digital.md
+      - Lab 3 - Intelligent AI Assistant: AI_Assistant.md 
+      - Lab 4 - Bonus: bonus.md
       - Conclusion: conclusion.md
-  - Topologies: topologies.md
+  - Wrap up: wrap.md
   - How to use this guide:
       - Setting up and using the tool:
         - Initial Setup: howToUse/initialSetup.md

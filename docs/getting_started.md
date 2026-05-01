@@ -1,6 +1,6 @@
 # Lab 1 - Getting Started
 
-## Section 1
+## Section A
 
 Please use the following credentials to connect to device:
 
@@ -32,6 +32,14 @@ Image:
   ![ACI](./assets/aci.png){ width="500" }
 </figure>
 
-## Section 2
+## Section B
 
 More content
+
+
+Choose one of the following methods to dial the Channel number:
+
+- **Using your mobile device:** Dial the assigned Channel number directly from your mobile phone.
+- **Using the Webex App on your workstation:**
+    - Log in to the Webex App with your supervisor credentials.
+    - Dial your assigned Channel number within the Webex Calling interface.

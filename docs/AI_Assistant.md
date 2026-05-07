@@ -761,7 +761,7 @@ Answer the call in your Agent Desktop.
 
 ---
 
-## Lab 3 Complete — Congratulations!
+## 🏁 Lab 3 Complete — Congratulations! 🎉
 
 You have successfully completed **Lab 3 – Real-Time AI Assistant for Complex Patient Interactions**.
 

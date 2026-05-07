@@ -119,6 +119,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
 ??? tip "See how to configure"
     <figure markdown>
       ![survey](./assets/survey.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+      <figcaption>Digital Survey Configuration</figcaption>
     </figure>
 
 ---
@@ -760,7 +761,7 @@ Run the full test **twice** — once in **English**, then in **Spanish**.
 
 ---
 
-## Lab 2 Complete – Congratulations!
+## 🏁 Lab 2 Complete – Congratulations! 🎉
 
 You have successfully completed **Lab 2 – AI Digital-First Multilingual Patient Journey**.
 

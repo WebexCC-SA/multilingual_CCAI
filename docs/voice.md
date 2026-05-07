@@ -440,7 +440,15 @@ Autonomous AI Agent.
 
     Copy and paste the following JSON:
 
-
+    ```json
+    {
+        "transactionID": "$(transid)",
+        "flowname": "$(flowname)",
+        "serviceName": "$(serviceName)",
+        "httpStatus": "$(n3.http.statusCode)",
+        "httpResponse": "$(n3.http.responseBody)"
+    }
+    ```   
 
     ???- tip "See how to configure Flow Outcomes"
         <figure markdown>
@@ -959,7 +967,7 @@ When the IVR prompts for language, press **2 for Spanish**.
 
 ---
 
-## Lab 1 Complete — Congratulations! 
+## 🏁 Lab 1 Complete — Congratulations! 🎉
 
 You have successfully completed **Lab 1 — Orchestrating Multilingual Voice AI**.
 

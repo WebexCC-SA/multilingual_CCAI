@@ -1,3 +1,15 @@
+### 🎯 Learning Objectives
+
+By the end of this session you will be able to:
+
+- **Deploy** an autonomous multilingual Voice AI Agent that schedules appointments
+  without human intervention
+- **Configure** a Digital AI that engages patients in their language across chat channels
+- **Enable** a real-time AI Assistant that guides agents through complex interactions
+  with policy-validated intelligence
+- **Measure** AI impact and agent performance using Analyzer dashboards and
+  automated AI QM evaluation forms
+
 # Lab 1 - Getting Started
 
 ## Section A

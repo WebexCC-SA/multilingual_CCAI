@@ -1,7 +1,7 @@
 # Overview
 ---
 
-## 🏥 Your Mission
+## Your Mission
 
 You are a **Webex Contact Center Administrator** at **Cumulus Hospital**, a modern healthcare provider serving diverse communities across the United States and Mexico.
 
@@ -16,7 +16,7 @@ Because Cumulus Hospital serves a diverse patient base, a core pillar of this la
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By the end of this session you will be able to:
 
@@ -28,7 +28,7 @@ By the end of this session you will be able to:
 ---
 
 
-## 🗺️ Lab Structure
+## Lab Structure
 
 | | Detail | |
 |---|---|---|
@@ -38,7 +38,7 @@ By the end of this session you will be able to:
 
 ---
 
-## 📚 Lab Topics
+## Lab Topics
 
 === "Lab 1"
 

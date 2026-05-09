@@ -1,57 +1,149 @@
-### 🎯 Learning Objectives
+# Getting Started
 
-By the end of this session you will be able to:
+## 1 Disclaimer
 
-- **Deploy** an autonomous multilingual Voice AI Agent that schedules appointments
-  without human intervention
-- **Configure** a Digital AI that engages patients in their language across chat channels
-- **Enable** a real-time AI Assistant that guides agents through complex interactions
-  with policy-validated intelligence
-- **Measure** AI impact and agent performance using Analyzer dashboards and
-  automated AI QM evaluation forms
+Although the lab design and configuration examples provided throughout this session can be used as a reference, for design-related questions please consult the official documentation at [help.webex.com](https://help.webex.com).
 
-# Lab 1 - Getting Started
+## 2 Lab Preparation 
 
-## Section A
+### 2.1 Chrome Profile Setup
 
-Please use the following credentials to connect to device:
+To avoid browser login and cache errors, you will work with dedicated Chrome Profiles
+representing the different user roles throughout the labs.
 
-| <!-- -->         | <!-- -->         |
-| ---------------- | ---------------- |
-| `IP Address`     | 1.1.1.1          |
-| `Username`       | admin            |
-| `Password`       | C1sco123         |
+#### Profiles to Create
+| Profile Name | Role |
+|---|---|
+| `Admin_Lab` | Administrator |
+| `Supervisor_Lab` | Supervisor |
+| `Agent_Lab` | Agent |
+
+---
+
+### Steps
+
+1. Launch **Chrome** and locate the **person icon** near the top-right corner of the browser.
+
+???- note "Chrome Profile icon"
+    <figure markdown>
+      ![Chrome Profile](./assets/ChromeProfile_image.png){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+      <figcaption>Chrome profile icon — top-right corner</figcaption>
+    </figure>
+
+2. Click the icon and select **Add Chrome Profile**, then choose **Stay Signed out**.
+3. Select a color, enter the profile name (e.g. `Admin_Lab`) and click **Done**.
+4. Repeat **steps 2 and 3** to create the two remaining profiles — `Supervisor_Lab`
+   and `Agent_Lab`.
+
+???- info "See How It Works"
+    <figure markdown>
+      ![Chrome Profile Setup](./assets/ChromeProfile.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+      <figcaption>Creating the three Chrome Profiles for the lab</figcaption>
+    </figure>
+
+---
+    
+## 2 Lab Access
+
+!!! warning "The Pod Discipline — Read Before You Start"
+    Throughout all labs, you will be working on a **shared tenant** with all other students
+    in this session.
+
+    To keep the environment stable for everyone, please follow these rules:
+
+    - Always replace **XXX** with your assigned **3-digit Pod ID (e.g., 001, 002)**
+    - Your naming convention must always start with the prefix **Pod** followed by your
+      ID — **(PodXXX)**
+    - **Always use the exact name indicated in the lab guide** — do not use different
+      names, do not alter the suggested name, do not add extra characters
+    - **Do not modify, delete, or overwrite** any resource labeled **ADMIN** or
+      **DO NOT DELETE** — those are shared configurations that support the entire lab
+    - If you do not follow this convention exactly, you will overwrite your neighbor's
+      work
+
+    Stay disciplined. Your Pod ID is your workspace.
+---
+
+### 2.1 Lab Credentials
+All credentials for this session have been pre-provisioned by the lab proctors. <br>
+Open the file **`LTRCCT-2001_Credentials.txt`** located on the **Desktop** of your lab machine, it contains
+everything you need to get started. <br>
+A physical copy has also been provided to you at your seat.
+
+| Role | Username | Password |
+|---|---|---|
+| Administrator | `wxcclabs+admin_IDXXX@gmail.com` | Provided in the LTRCCT-2001_Credentials file |
+| Agent | `wxcclabs+agent_IDXXX@gmail.com` | Provided in the LTRCCT-2001_Credentials file |
+| Supervisor | `wxcclabs+supvr_XXX@gmail.com` | Provided in the LTRCCT-2001_Credentials file |
+
+#### Your credentials file also includes
+- 🪪 Your **Pod ID**
+- 📞 Your **PSTN Channel Number**
+- 🔑 Your **Airtable Authorization Token**
+
+---
+
+!!! info "Action Required — Webex Space"
+    Before starting the labs, post a message in the **Webex space assigned for this lab**
+    with your **Pod ID + Full Name** (e.g., `Pod 001 — Jane Doe`).
+
+    This allows proctors to track assignments and assist you faster throughout the session.
+
+!!! tip "Lost your Airtable Token?"
+    If you need your **Airtable Authorization Token** again at any point during the lab,
+    request it directly from a proctor in the **Webex lab space**.
+
+---
+
+### 2.2 Making Test Calls - Webex App Setup
+#### If you can make US PSTN Calls from your mobile skip this section
+If you are unable to place test calls from your mobile device, you can use the **Webex App** pre-installed on your lab machine as your PSTN calling device.
+<br>
+
+1. On your lab machine **Desktop**, locate the **Webex App** icon and double-click
+   to open it.
+2. Sign in using your **Supervisor credentials** from `LTRCCT-2001_Credentials`.
+3. Once logged in, navigate to the **Calling** menu on the left panel.
+4. Dial your assigned **Channel PSTN Number** to place a test call into the lab flow.
+
+???- info "See How It Works"
+    <figure markdown>
+      ![Webex App](./assets/WebexApp.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+      <figcaption>Webex App for PSTN Calls</figcaption>
+    </figure>
+
+!!! tip "Earbuds Available at Your Seat"
+    A pair of wired earbuds has been provided at your workstation, use them if needed to place calls through the **Webex App** or to handle interactions as an Agent during **Lab 3**.
 
 
-My content
+### 2.3 Lab Quick Links
 
-!!! note
-    This is a note
+Bookmark these URLs — you will use them throughout all labs.
 
-Cisco IOS code block:
+| Tool | URL |
+|---|---|
+| **Control Hub** | [admin.webex.com](https://admin.webex.com) |
+| **Agent / Supervisor Desktop** | [desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com/?ciClusterId=P0A1) |
 
-```ios
-hostname ABC
-interface GigabitEthernet1
- ip address 122.1.1.1
-```
+## 3 Lab Environment — Pre-Configured Components
 
+To maximize your lab time, the following components have been pre-configured by the
+proctors. **You do not need to set these up.**
 
+| Component | Details |
+|---|---|
+| **Site** | One site pre-created for the lab environment |
+| **Cisco PSTN** | Applied to the lab environment |
+| **Teams & Queues** | Pre-created for each Pod |
+| **Desktop Profile & Layout** | Pre-configured for the lab environment |
+| **Webex Connect Services** | Pre-provisioned for each Pod |
+| **Webex Connect Web Chat Asset** | Pre-provisioned for each Pod |
+| **Users & Licenses** | Agent and Supervisor users with Contact Center licenses applied for each Pod |
+| **Multimedia Profile** | Pre-configured for the lab environment |
+| **Wrap-up & Idle Codes** | Pre-configured for the lab environment |
+| **AI Assistant Features** | Generated summaries, sentiment analysis, and real-time transcription enabled for the lab environment |
 
-Image:
+!!! note "Lab-Specific Assets"
+    Depending on the lab, additional assets such as **flows, knowledge bases, AI Agents, and other configurations** have been pre-created for each specific use case. These items are explained in detail in the corresponding lab section.
 
-<figure markdown>
-  ![ACI](./assets/aci.png){ width="500" }
-</figure>
-
-## Section B
-
-More content
-
-
-Choose one of the following methods to dial the Channel number:
-
-- **Using your mobile device:** Dial the assigned Channel number directly from your mobile phone.
-- **Using the Webex App on your workstation:**
-    - Log in to the Webex App with your supervisor credentials.
-    - Dial your assigned Channel number within the Webex Calling interface.
+---

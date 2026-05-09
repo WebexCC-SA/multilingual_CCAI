@@ -88,9 +88,6 @@ markdown_extensions:
 nav: 
   - Overview:
         - Learining Objectives: overview.md
-        - Learning Deliverables: deliverables.md
-        - Lab Access & Instructions: access.md
-        - Customer Scenario: scenario.md
   - Activities:
       - Getting Started: getting_started.md
       - Lab 1 - Multilingual Voice AI: voice.md
@@ -98,13 +95,5 @@ nav:
       - Lab 3 - Intelligent AI Assistant: AI_Assistant.md 
       - Lab 4 - Bonus - Analytics: bonus.md
   - Wrap up: wrap.md
-  - How to use this guide:
-      - Setting up and using the tool:
-        - Initial Setup: howToUse/initialSetup.md
-        - Using the tool after the initial setup: howToUse/postInitial.md
-        - Publishing your changes: howToUse/syncChanges.md
-      - Styling and Advanced Features:
-        - Markdown and Other References: howToUse/references.md
-        - Custom Features: howToUse/customFeatures.md
-        - Custom Admonitions: howToUse/admonition.md
+  
  

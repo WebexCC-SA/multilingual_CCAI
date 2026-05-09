@@ -147,3 +147,5 @@ proctors. **You do not need to set these up.**
     Depending on the lab, additional assets such as **flows, knowledge bases, AI Agents, and other configurations** have been pre-created for each specific use case. These items are explained in detail in the corresponding lab section.
 
 ---
+
+*Lab authored for Cisco Live 2026*

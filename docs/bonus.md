@@ -243,3 +243,5 @@ You have successfully completed **Bonus Lab – **AI Analytics & Quality Managem
 | Manual evaluation | Performed and combined score reviewed |
 
 ---
+
+*Lab authored for Cisco Live 2026*

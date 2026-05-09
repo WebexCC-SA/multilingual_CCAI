@@ -981,3 +981,7 @@ You have successfully completed **Lab 1 — Orchestrating Multilingual Voice AI*
 | Channel Configuration | Routing flow mapped to your assigned DID |
 | Welcome Message | Updated to use dynamic variable from Voice Flow |
 | End-to-End Testing (EN + ES) | All scenarios validated — KB, scheduling & SMS confirmation |
+
+---
+
+*Lab authored for Cisco Live 2026*

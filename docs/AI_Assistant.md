@@ -781,3 +781,5 @@ You have successfully completed **Lab 3 – Real-Time AI Assistant for Complex P
 
 
 ---
+
+*Lab authored for Cisco Live 2026*

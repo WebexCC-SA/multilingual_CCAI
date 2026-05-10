@@ -87,7 +87,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 nav: 
   - Overview:
-        - Learining Objectives: overview.md
+        - Your Mission: overview.md
   - Activities:
       - Getting Started: getting_started.md
       - Lab 1 - Multilingual Voice AI: voice.md

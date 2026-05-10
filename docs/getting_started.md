@@ -43,7 +43,7 @@ representing the different user roles throughout the labs.
 
 ---
     
-## 2 Lab Access
+## 3 Lab Access
 
 !!! warning "The Pod Discipline — Read Before You Start"
     Throughout all labs, you will be working on a **shared tenant** with all other students
@@ -64,7 +64,7 @@ representing the different user roles throughout the labs.
     Stay disciplined. Your Pod ID is your workspace.
 ---
 
-### 2.1 Lab Credentials
+### 3.1 Lab Credentials
 All credentials for this session have been pre-provisioned by the lab proctors. <br>
 Open the file **`LTRCCT-2001_Credentials.txt`** located on the **Desktop** of your lab machine, it contains
 everything you need to get started. <br>
@@ -95,7 +95,7 @@ A physical copy has also been provided to you at your seat.
 
 ---
 
-### 2.2 Making Test Calls - Webex App Setup
+### 3.2 Making Test Calls - Webex App Setup
 #### If you can make US PSTN Calls from your mobile skip this section
 If you are unable to place test calls from your mobile device, you can use the **Webex App** pre-installed on your lab machine as your PSTN calling device.
 <br>
@@ -116,7 +116,7 @@ If you are unable to place test calls from your mobile device, you can use the *
     A pair of wired earbuds has been provided at your workstation, use them if needed to place calls through the **Webex App** or to handle interactions as an Agent during **Lab 3**.
 
 
-### 2.3 Lab Quick Links
+### 3.3 Lab Quick Links
 
 Bookmark these URLs — you will use them throughout all labs.
 
@@ -125,7 +125,7 @@ Bookmark these URLs — you will use them throughout all labs.
 | **Control Hub** | [admin.webex.com](https://admin.webex.com) |
 | **Agent / Supervisor Desktop** | [desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com/?ciClusterId=P0A1) |
 
-## 3 Lab Environment — Pre-Configured Components
+## 4 Lab Environment — Pre-Configured Components
 
 To maximize your lab time, the following components have been pre-configured by the
 proctors. **You do not need to set these up.**

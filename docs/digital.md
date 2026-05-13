@@ -103,9 +103,12 @@ This isn't just a lab; this is the future of patient care. Let's build it.
     | **Thank You Title** | Gracias! |
     | **Thank You Message** | ¡Gracias por sus comentarios! Valoramos mucho su tiempo y estamos comprometidos con su salud y bienestar. ¡Que tenga un excelente día! |
 
-6. Click **Next** (bottom right) and configure as follows:
+6. Click the **English** tab.
 
-7. **Appearance Configuration**
+7. Click **Next** (bottom right) and configure as follows:
+
+
+8. **Appearance Configuration**
 
     | Field | Value |
     |---|---|
@@ -114,7 +117,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
     | **Brand Logo** | Upload Cumulus_Hospital.png from your desktop folder |
     | **Background Image** | Upload Cumulus_Hospital.png from your desktop folder |
 
-7. Click **Save**
+9. Click **Save**
 
 ??? tip "See how to configure"
     <figure markdown>

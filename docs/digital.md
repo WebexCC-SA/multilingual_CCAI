@@ -83,7 +83,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
     |---|---|
     | **Welcome Title** | Welcome |
     | **Welcome Message** | *(Leave blank)* |
-    | **Select +Add a question** | **Qestion Type:** Star Rating |
+    | **Select +Add a question** | **Qestion Type:** Star |
     | **Question** | On a scale of 1 to 5, how satisfied were you with the assistance provided today? |
     | **Start Label** | Very Dissatisfied *(Negative statement)* |
     | **End Label** | Very Satisfied *(Positive statement)* |
@@ -96,7 +96,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
     |---|---|
     | **Welcome Title** | ¡Bienvenido! |
     | **Welcome Message** | *(Leave blank)* |
-    | **Select +Add a question** | **Qestion Type:** Star Rating |
+    | **Select +Add a question** | **Qestion Type:** Star |
     | **Question** | En una escala del 1 al 5, ¿qué tan satisfecho estuvo con la asistencia recibida hoy? |
     | **Start Label** | Muy insatisfecho *(Negative statement)* |
     | **End Label** | Muy satisfecho *(Positive statement)* |

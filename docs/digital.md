@@ -145,7 +145,7 @@ This will download the `UseCase2_English.json` file to your local machine. Save 
 
 ??? tip "See how to Export"
     <figure markdown>
-      ![Export Agent](./assets/exportagent.png){ width="500" }
+      ![Export Agent](./assets/exportagent.png){ width="900" }
     </figure>
 ---
 

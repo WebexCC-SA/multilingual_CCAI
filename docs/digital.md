@@ -139,9 +139,9 @@ click on the black button **Build your AI Agent**.
 
 **Step 1 Export**
 
-Under **UseCase2_English** AI Agent, click the **three dots (...)** and select **Export agent**.
-This will download the `UseCase2_English.json` file to your local machine.
-Save it in your desktop folder.
+In the search bar, type `UseCase2_English` to locate the AI Agent. <br>
+Under **UseCase2_English**, click the **three dots (...)** and select **Export agent**.
+This will download the `UseCase2_English.json` file to your local machine. Save it in your **Desktop** folder.
 
 ??? tip "See how to Export"
     <figure markdown>

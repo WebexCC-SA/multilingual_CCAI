@@ -176,7 +176,7 @@ Click **Import**
 
 **Step 4 – Knowledge Configuration**
 
-In the **PodXXX_UseCase2_English** AI Agent page, go to the **Knowledge** tab, and configure as follow from the dropdown menu:
+In the **PodXXX_UseCase2_English** AI Agent page, go to the **Knowledge** tab, Click the search box, type the value below, and select it from the dropdown:
 
 | Field | Value |
 |---|---|
@@ -265,7 +265,7 @@ Click **Import**
 
 **Step 4 – Knowledge Configuration**
 
-In the **PodXXX_UseCase2_Spanish** AI Agent page, go to the **Knowledge** tab, and configure as follow from the dropdown menu:
+In the **PodXXX_UseCase2_Spanish** AI Agent page, go to the **Knowledge** tab, click the search box, type the value below, and select it from the dropdown:
 
 | Field | Value |
 |---|---|
@@ -307,7 +307,6 @@ Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Insi
     <figure markdown>
       ![Preview spanish](./assets/previewspanish.gif)
     </figure>
-
 
 
 ---

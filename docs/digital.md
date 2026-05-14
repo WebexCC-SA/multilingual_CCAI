@@ -237,6 +237,7 @@ In the **PodXXX_UseCase2_English** AI Agent page, open the **Sessions** tab loca
 
 **Step 1 – Export**
 
+In the search bar, type `UseCase2_Spanish.json` to locate the AI Agent. <br>
 Under **UseCase2_Spanish** AI Agent, click the **three dots (...)** and select **Export agent**.
 This will download the `UseCase2_Spanish.json` file to your local machine.
 Save it in your desktop folder.

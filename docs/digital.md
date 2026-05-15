@@ -233,7 +233,7 @@ In the **PodXXX_UseCase2_English** AI Agent page, open the **Sessions** tab loca
     </figure>
 
 !!! tip "Session Inspection"
-    At any point, hover over the chat bubble and click **View In sessions** to open the session inspection panel directly.
+    At any point, inside the preview chat, hover over the chat bubble and click **View In Session** to open the session inspection panel directly.
 
 ---
 
@@ -315,7 +315,7 @@ Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Insi
 
 
 !!! tip "Session Inspection"
-    At any point, hover over the chat bubble and click **View In sessions** to open the session inspection panel directly.
+    At any point, inside the preview chat, hover over the chat bubble and click **View In Session** to open the session inspection panel directly.
 ---
 
 ## Phase 3: Webex Connect – Flow Orchestration

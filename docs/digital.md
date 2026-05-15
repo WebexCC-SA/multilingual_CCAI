@@ -215,9 +215,6 @@ Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Insi
     | 🤖 **Prompt** | Thank you, Caro. The form has been shared. Please complete the document and return it to our registration office at your earliest convenience. Here is the Patient Registration Form: **Patient Registration Form 2026**. Is there anything else I can help you with today? |
     
 
-!!! tip "Session Inspection"
-    At any point, hover over the chat bubble and click **View In sessions** to open the session inspection panel directly.
-
 ???- tip "See how it works"
     <figure markdown>
         ![Preview English](./assets/previewenglish.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
@@ -308,8 +305,6 @@ Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Insi
     | 👤 **User** | Formulario de Reclamo de Seguro |
     | 🤖 **Prompt** | Gracias, Caro. Aquí tiene el enlace para descargar el **Formulario de Reclamo de Seguro 2026**. Por favor, complete el documento y devuélvalo a nuestra oficina de registro a la brevedad posible. ¿Hay algo más en lo que pueda ayudarle hoy? |
 
-!!! tip "Session Inspection"
-    At any point, hover over the chat bubble and click **View In sessions** to open the session inspection panel directly.
 
 ???- tip "See how it works"
     <figure markdown>
@@ -317,6 +312,8 @@ Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Insi
     </figure>
 
 
+!!! tip "Session Inspection"
+    At any point, hover over the chat bubble and click **View In sessions** to open the session inspection panel directly.
 ---
 
 ## Phase 3: Webex Connect – Flow Orchestration

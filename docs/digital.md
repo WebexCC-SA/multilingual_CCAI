@@ -421,6 +421,11 @@ After Spanish Branch´s configuration make sure to **Save**
 
 ### 3.2.2 Language Agent Orchestration
 
+???- info "See Flow"
+    <figure markdown>
+        ![Cumulus Digital Architecture](./assets/digital-architecture.png){ width="1000" }
+    </figure> 
+
 Locate the numbered nodes in your flow, double-click to open each one, and configure them as follows:
 
 | Number | Node | Color | Action | Function |
@@ -455,6 +460,11 @@ After each configuration make sure to **Save**
 ---
 
 ### 3.2.3 Closing & Survey Hooks
+
+???- info "See Flow"
+    <figure markdown>
+        ![Cumulus Digital Architecture](./assets/digital-architecture.png){ width="1000" }
+    </figure> 
 
 Configure the final nodes to ensure a graceful exit and accurate data collection.
 <br>Locate the numbered nodes in your flow, double-click to open each one, and configure them as follows:
@@ -503,6 +513,11 @@ After each configuration make sure to **Save**
         > 👆 Select **PodXXX_UseCase2_Spanish** — Handles session closure after survey is presented.
 
 **Survey Hook – English Path**
+
+???- info "See Flow"
+    <figure markdown>
+        ![Cumulus Digital Architecture](./assets/digital-architecture.png){ width="1000" }
+    </figure> 
 
 Locate the numbered node in your flow, double-click to open, and configure it as follows:
 

@@ -232,6 +232,8 @@ In the **PodXXX_UseCase2_English** AI Agent page, open the **Sessions** tab loca
       ![inspection](./assets/inspection.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
     </figure>
 
+!!! tip "Session Inspection"
+    At any point, hover over the chat bubble and click **View In sessions** to open the session inspection panel directly.
 
 ---
 

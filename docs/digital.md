@@ -361,6 +361,11 @@ Your task is to "activate" the orchestration by mapping the variables and agents
 
 ### 3.2.1 Language Decision
 
+???- info "See Flow"
+    <figure markdown>
+        ![Cumulus Digital Architecture](./assets/digital-architecture.png){ width="1000" }
+    </figure> 
+
 Locate the **Language Decision** branch node.
 
 | Number | Node | Color | Action | Function |

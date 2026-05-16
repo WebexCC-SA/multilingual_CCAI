@@ -461,7 +461,7 @@ After each configuration make sure to **Save**
 
 ### 3.2.3 Closing & Survey Hooks
 
-???- info "See Flow"
+???- info "Flow Snapshot"
     <figure markdown>
         ![Cumulus Digital Architecture](./assets/digital-architecture.png){ width="1000" }
     </figure> 
@@ -514,7 +514,7 @@ After each configuration make sure to **Save**
 
 **Survey Hook – English Path**
 
-???- info "See Flow"
+???- info "Flow Snapshot"
     <figure markdown>
         ![Cumulus Digital Architecture](./assets/digital-architecture.png){ width="1000" }
     </figure> 

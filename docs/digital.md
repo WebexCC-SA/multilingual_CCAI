@@ -610,13 +610,22 @@ Click **Next**.
 
 Click **Save and Next**.
 
+!!! warning "Getting an error after clicking Save & Next?"
+    This is expected in the lab environment, multiple pods share the same **domain** for web chat assets. Simply click **X** to dismiss the error and your website widget
+    will be enabled correctly.
+    ???- Advise "Error"
+        <figure markdown>
+            ![WebChat Error](./assets/error_webChat.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+        </figure>
+
 ---
 
 **Banned Visitors**
 
-Click **Done**.
+If you do not get the error, click **Done**.
 
-???- note "See Example"
+
+???- note "Complete Web Chat Asset Configuration"
     **WebChat**
     <figure markdown>
         ![WebChat Assest](./assets/webchat.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }

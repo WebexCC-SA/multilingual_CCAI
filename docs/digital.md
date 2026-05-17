@@ -566,11 +566,18 @@ After each configuration make sure to **Save**
 
 Locate the numbered node in your flow, double-click to open, and configure it as follows:
 
- Number | Node | Color | Action | Function |
-|---|---|---|---|---|
-| 8 | Survey | Purple | set the Preferred Language field to **English** | Triggers English CSAT survey |
+| Number | Node | Color | Function |
+|---|---|---| --- |
+| 8 | Survey | Purple | Triggers English CSAT survey | 
 
-After configuration make sure to **Save**
+Configure the node with the following settings:
+
+1. **Node Authentication** — Select `LTRCCT2001`
+2. Click **Fetch All Questionnaires**
+3. Under **Available Questionnaires**, select your own survey: `PodXXX_Cumulus_Survey`
+4. Set the **Preferred Language** field to `English`
+
+After configuration, make sure to **Save**.
 
 ???- note "See Example — ⑧ Survey English"
 
@@ -583,16 +590,21 @@ After configuration make sure to **Save**
 
 Locate the numbered node in your flow, double-click to open, and configure it as follows:
 
-Number | Node | Color | Action | Function |
-|---|---|---|---|---|
-| 9 | Survey | Purple | set the Preferred Language field to **Spanish** | Triggers Spanish CSAT survey |
+Number | Node | Color | Function |
+|---|---|---|---|
+| 9 | Survey | Purple | Triggers Spanish CSAT survey |
 
-After configuration make sure to **Save**
+Configure the node with the following settings:
+
+1. **Node Authentication** — Select `LTRCCT2001`
+2. Click **Fetch All Questionnaires**
+3. Under **Available Questionnaires**, select your own survey: `PodXXX_Cumulus_Survey`
+4. Set the **Preferred Language** field to `Spanish`
 
 ???- note "See Example — ⑨ Survey Spanish"
 
     <figure markdown>
-        ![Spanish Survey](./assets/surveyspanish.png){ width="900" }
+        ![Spanish Survey](./assets/spanishsurvey.png){ width="900" }
     </figure>
     > 👆 Set the **Preferred Language** field to **Spanish** to trigger the Spanish CSAT survey.
 

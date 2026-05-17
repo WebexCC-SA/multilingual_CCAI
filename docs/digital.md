@@ -140,7 +140,7 @@ click on the black button **Build your AI Agent**.
 **Step 1 – Extract Website into Knowledge Base** 
 
 !!! info "What is Website Extraction?"
-    The Knowledge Base already contains a **pre-loaded file** with general information about Cumulus Hospital and its patient intake forms. In this step, we will add **website source** to extract additional content — specifically the types of diagnostic services offered by the hospital. The crawler starts from a URL you specify and navigates through pages based on depth and page limits, transforming web content into knowledge your AI Agent can access instantly.
+    The Knowledge Base already contains a **pre-loaded file** with general information about Cumulus Hospital and its patient intake forms. <br> In this step, we will add **website source** to extract additional content, specifically the types of diagnostic services offered by the hospital. The crawler starts from a URL you specify and navigates through pages based on depth and page limits, transforming web content into knowledge your AI Agent can access instantly. <br> <br> For time-keeping purposes, we will only perform this step for the **English AI Agent**.
 
 1. Navigate to the **Knowledge** tab (third tab) in the AI Agent Studio.
 2. Locate the Knowledge Base **`PodXXX_UseCase2_AIAgentCumulus_EN`** and click it. *(Replace XXX with your PodID)* 

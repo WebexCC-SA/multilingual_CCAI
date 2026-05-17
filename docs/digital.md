@@ -137,7 +137,45 @@ click on the black button **Build your AI Agent**.
 
 ### 2.1 English Agent
 
-**Step 1 Export**
+**Step 1 – Extract Website into Knowledge Base** 
+
+!!! info "What is Website Extraction?"
+    The Knowledge Base already contains a **pre-loaded file** with general information about Cumulus Hospital and its patient intake forms. In this step, we will add **website source** to extract additional content — specifically the types of diagnostic services offered by the hospital. The crawler starts from a URL you specify and navigates through pages based on depth and page limits, transforming web content into knowledge your AI Agent can access instantly.
+
+1. Navigate to the **Knowledge** tab (third tab) in the AI Agent Studio.
+2. Locate the Knowledge Base **`PodXXX_UseCase2_AIAgentCumulus_EN`** and click it. *(Replace XXX with your PodID)* 
+3. In the top right corner, click the black **Add Source** button and select **Websites**.
+4. Read and agree to the **disclaimer**.
+5. Configure the source as follows:
+
+    | Field | Value |
+    |---|---|
+    | **Source Name** | `Cumulus Hospital` |
+    | **Description** | `Cumulus Hospital Services` |
+    | **Starting URL** | `https://carolmor-collab.github.io/cumulus-hospital/` |
+    | **Deep Limit** | `1` |
+    | **Page Limit** | `10` |
+    | **Content Exclusions** | `Nav & Footer` |
+
+    !!! tip "Want to preview the website?"
+        Open [https://carolmor-collab.github.io/cumulus-hospital/](https://carolmor-collab.github.io/cumulus-hospital/)
+        in a new browser tab to see the content that will be extracted.
+
+6. Under **Sync Rule Schedule**, keep **Automatically apply changes to agents or skills** selected.
+7. Click **Add Source**.
+
+!!! note "Syncing in Progress"
+    The source will take a couple of minutes to sync. Once it shows **Updated**, click the ✏️ pencil icon to review the content that was extracted.
+
+    If it is still syncing, continue to the next step — it will complete in the background.
+
+??? tip "See How to configure"
+    <figure markdown>
+      ![Extract Website](./assets/extract_website.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+      <figcaption>Extracting website content into the Knowledge Base</figcaption>
+    </figure>
+
+**Step 2 - Export the Template Agent**
 
 In the search bar, type `UseCase2_English` to locate the AI Agent. <br>
 Under **UseCase2_English**, click the **three dots (...)** and select **Export agent**.
@@ -149,14 +187,14 @@ This will download the `UseCase2_English.json` file to your local machine. Save 
     </figure>
 ---
 
-**Step 2 Import**
+**Step 3 - Import the Template to Create Your AI Agent**
 
 There in the Studio > Click **Import AI Agent**. Under the **Upload** button,
 select the `UseCase2_English.json` file.
 
 ---
 
-**Step 3 Naming**
+**Step 4 - Naming**
 
 | Field | Value |
 |---|---|
@@ -174,7 +212,7 @@ Click **Import**
 
 ---
 
-**Step 4 – Knowledge Configuration**
+**Step 5 – Knowledge Configuration**
 
 In the **PodXXX_UseCase2_English** AI Agent page, go to the **Knowledge** tab, Click the search box, type the value below, and select it from the dropdown:
 
@@ -189,13 +227,15 @@ Click **Save** and then **Publish**. For the comment, use: `V1`
 
 ---
 
-**Step 5 – Test**
+**Step 6 – Test**
 
-Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Inside PodXXX_UseCase2_English AI Agent page Select **Preview** and **Start a chat** and verify:
+Use the **Preview** feature in the AI Agent Studio to simulate a live chat. <br>
+Inside PodXXX_UseCase2_English AI Agent page Select **Preview** and **Start a chat** and verify:
 
  
 - **Identity Capture**: The agent asks for your **name**.
-- **Conversational NLU**: Test the agent's ability to handle context by saying: *Hi, I’m currently in Las Vegas on a business trip and I’m feeling under the weather. I don’t feel well and I think I need to get medical assistance*
+- **Conversational NLU - General request**: Test the agent's ability to handle general question by saying: *Hi, I’m currently in Las Vegas on a business trip and I’m feeling under the weather. I don’t feel well and I think I need to get medical assistance*
+- **Conversational NLU - Specific request**: Test the agent's ability to handle specific context by saying: *What kind of diagnostics services do you have?*
 - **Intent Recognition**: The agent recognizes the **Insurance Forms** intent when you say: *I need some forms*
 - **Form Delivery**: The agent provides the correct URL for the requested form.
 - **Language Consistency**: The entire interaction remains in **English**.
@@ -223,7 +263,7 @@ Use the **Preview** feature in the AI Agent Studio to simulate a live chat. Insi
 
 ---
 
-**Step 6 – Session Inspection**
+**Step 7 – Session Inspection**
 
 In the **PodXXX_UseCase2_English** AI Agent page, open the **Sessions** tab located on the left-hand navigation menu. Review the most recent session log to confirm the conversation was triggered and processed correctly.
 
@@ -239,7 +279,7 @@ In the **PodXXX_UseCase2_English** AI Agent page, open the **Sessions** tab loca
 
 ### 2.2 Spanish Agent
 
-**Step 1 – Export**
+**Step 1 – Export the Template Agent**
 
 In the search bar, type `UseCase2_Spanish` to locate the AI Agent. <br>
 Under **UseCase2_Spanish** AI Agent, click the **three dots (...)** and select **Export agent**.
@@ -249,7 +289,7 @@ Save it in your desktop folder.
 
 ---
 
-**Step 2 – Import**
+**Step 2 – Import the Template to Create Your AI Agent**
 
 There in the Studio > Click **Import AI Agent**. Under the **Upload** button,
 select the `UseCase2_Spanish.json` file.

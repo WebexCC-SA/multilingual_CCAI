@@ -73,7 +73,7 @@ In this phase, you will provision the "Brain" of the agent-assist experience. We
 8. Click **Close and keep processing**.
 
 !!! note "Syncing in Progress"
-    The source will take a couple of minutes to sync. Once it shows **Updated**, click the ✏️ pencil icon to review the content that was extracted.
+    The source will show as **Processing** for a couple of minutes. Once it is ready, the status will change to **Updated**.
 
     If it is still syncing, continue to the next step — it will complete in the background.
 

@@ -72,6 +72,11 @@ In this phase, you will provision the "Brain" of the agent-assist experience. We
 
 8. Click **Close and keep processing**.
 
+!!! note "Syncing in Progress"
+    The source will take a couple of minutes to sync. Once it shows **Updated**, click the ✏️ pencil icon to review the content that was extracted.
+
+    If it is still syncing, continue to the next step — it will complete in the background.
+
 ??? tip "See how to configure"
     <figure markdown>
       ![Knowledge Base AI Assistant](./assets/KW_AI_Assistant.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }

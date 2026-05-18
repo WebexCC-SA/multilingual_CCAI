@@ -424,7 +424,7 @@ Open the Language Decision Node, expand the Branch 1 and configure as follow:
 | **Value** | English  |
 
 ???+ warning "Cannot edit the branch name?"
-    If you see the ✏️ pencil and 🗑️ trash icons together, close the node, click **Save** in the main flow, and reload the browser. — the fields will become editable again.
+    If you see the ✏️ pencil and 🗑️ trash icons together, close the node, click **Save**, close and open the browser again. — the fields will become editable again.
 
 ???- note "See Example — ① Language Decision - English"
 

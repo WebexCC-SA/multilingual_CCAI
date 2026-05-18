@@ -53,7 +53,7 @@ https://desktop.wxcc-us1.cisco.com/
 
 ### 1.2 Explore the Overview Dashboard
 
-1. In the left panel, click **Overview**.
+1. In the left panel, click **Monitor** → **Overview**.
 2. Scroll down and explore the operational KPIs available — Service Level, Handle Time,
    Queue details, and more.
 
@@ -101,7 +101,7 @@ volume, Handle Time, and Calls with Suggested Responses.
 ### 1.1 Review Completed Interactions
 
 1. Go back to the **Supervisor Desktop**.
-2. In the left panel, click **Interactions** → **Completed**.
+2. In the left panel, click **Monitor* → **Interactions** → **Completed**.
 
 !!! Important "New AI QM KPIs"
     | KPI | Description |

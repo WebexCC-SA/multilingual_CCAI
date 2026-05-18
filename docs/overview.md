@@ -12,7 +12,7 @@ Because Cumulus Hospital serves a diverse patient base, a core pillar of this la
 
 ???+ info "Core Learning"
     Throughout this lab, you will prove one thing:
-    > ### *One platform unifies every channel, every language, and AI.*
+    > ### *WebexCC AI  is flexible and easy to use for multilanguage environment.*
 
 ---
 

@@ -318,13 +318,13 @@ Use the built-in **Preview** tool in the AI Agent Studio to simulate a live chat
         | Role | Message |
         |---|---|
         | 🤖 **Prompt** | Hi, how can I help you? |
-        | 👤 **User** | Help |
+        | 👤 **User** | Help please |
         | 🤖 **Prompt** | To assist you accurately with your Blue Cross Blue Shield coverage, may I please have the patient's name? |
         | 👤 **User** | Caro |
         | 🤖 **Prompt** | Thank you, Caro. Could you please provide the Blue Cross Blue Shield policy code and the specific procedure (MRI, X-Ray, Blood Test, or Ultrasound) you are inquiring about? |
         | 👤 **User** | BCBS-101, MRI |
         | 🤖 **Prompt** | For BCBS-101 policy, MRI procedures are covered at 70%, and pre-authorization is required. Could you please provide the patient's phone number so I can send the pre-authorization form via SMS? |
-        | 👤 **User** | *[Enter your phone number]* |
+        | 👤 **User** | *Enter your phone number (include the + country code)* |
         | 🤖 **Prompt** | The pre-authorization form for the MRI procedure under BCBS-101 has been sent to Caro's phone number. Is there any other form you would like me to send? |
 
     ???- tip "See how it works"
@@ -373,14 +373,14 @@ Use the built-in **Preview** tool in the AI Agent Studio to simulate a live chat
         | Role | Message |
         |---|---|
         | 🤖 **Prompt** | Hola, ¿cómo puedo ayudarle? |
-        | 👤 **User** | Ayuda |
+        | 👤 **User** | Ayuda por favor|
         | 🤖 **Prompt** | Para poder ayudarle mejor, ¿podría proporcionarme el nombre del paciente, por favor? |
         | 👤 **User** | Caro |
         | 🤖 **Prompt** | Gracias, Caro. Para poder verificar la cobertura de su seguro, ¿podría indicarme el código de su póliza BCBS y el procedimiento médico que necesita, como resonancia magnética, rayos X, análisis de sangre o ultrasonido? |
-        | 👤 **User** | BCBS-101, resonancia magnética |
-        | 🤖 **Prompt** | Para la resonancia magnética con la póliza BCBS-101, la cobertura es del 70% y se requiere preautorización. ¿Podría proporcionarme su número de teléfono para enviarle el formulario de preautorización por SMS? |
-        | 👤 **User** | *[Enter your phone number]* |
-        | 🤖 **Prompt** | Caro le he enviado el formulario de preautorización para Rayos X a su teléfono. ¿Necesita que le envíe algún otro formulario relacionado con su seguro o atención médica? |
+        | 👤 **User** | ultrasoindo, póliza BCBS-101 |
+        | 🤖 **Prompt** | Con la póliza BCBS-101 para un ultrasonido, la cobertura es del 70% y se requiere preautorización. Por favor, ¿podría proporcionarme el número de teléfono del paciente para enviarle el formulario de preautorización por SMS? |
+        | 👤 **User** | *Enter your phone number (include the + country code)* |
+        | 🤖 **Prompt** | He enviado el formulario de autorización para el ultrasonido a través de SMS al número +50660601075. ¿Necesita que le envíe algún otro formulario o le puedo ayudar con algo más? |
 
     ???- tip "See how it works"
         <figure markdown>
@@ -469,7 +469,7 @@ The final configuration step is to map your English and Spanish queues to the ma
 
 1. Navigate to **Contact Center > Flows**.
 
-2. Search for your flow: **PodXXX_UseCase3_Cumulus**. Click to open.
+2. Search for your flow: **PodXXXUseCase3Cumulus**. Click to open.
 
 3. Click **Get Started** to close the welcome screen.
 
@@ -551,6 +551,20 @@ upper right and configure as follows:
     </figure>
 ---
 
+### 3.4 Configure the Channel
+
+1. In **Control Hub > Contact Center**, find **Channels**.
+
+2. Find your Channel **PodXXX_Cumulus_Voice** and click to edit. Configure as follows:
+
+    | Field | Value |
+    |---|---|
+    | **Routing Flow** | PodXXXUseCase3Cumulus |
+    | **Music on Hold** | defaultmusic_on_hold.wav |
+    | **Version Label** | Latest |
+
+    Click **Save**.
+
 ## Phase 4: The "Live" Patient Journey — English Testing
 
 In this phase, you will validate the end-to-end patient journey. You will simulate a live
@@ -577,18 +591,26 @@ Log in with your assigned **Agent credentials** in the Agent Desktop.
 | **Team** | PodXXX_Cumulus |
 | **Handle calls using** | Desktop |
 
-Click **Save and Continue**. Set your agent status to **Break**.
+Click **Save and Continue**. 
 
 ???- tip "See how to configure"
     <figure markdown>
         ![Agent Desktop Login](./assets/agentdesktoplogin.png){ width="500" }
     </figure>
 
+Set your agent status to **Set as Idle (all channels)** : select as reason: **Break**.
+
+???- tip "See how to configure"
+    <figure markdown>
+        ![Agent Desktop Status](./assets/agent_breakstatus.png){ width="980" }
+    </figure>
+
+
 ---
 
 **Step 3 — Initiate Call**
 
-Step 3.1: Dial your assigned **Channel number** from your mobile device or Webex App. *(you can find it under the lab access instructions)*.
+Step 3.1: Dial your assigned **Channel number** from your mobile device or Webex App. *(you can find it under the lab access instructions in the getting Started session)*.
 
 > 🔗 You can use your **cell phone** or log in to the **Webex App** using the additional
 > user assigned to your POD to make the call.
@@ -615,7 +637,13 @@ When the IVR prompts for language, select **English**.
 
 **Step 6 — Agent Desktop Reception**
 
-Set your agent status to **Available** and answer the call.
+Set your agent status to **Set as Available (all channels)** and the call will be answered **automatically**.
+
+???- tip "See how to configure"
+    <figure markdown>
+        ![Agent Desktop Available](./assets/agent_available.png){ width="980" }
+    </figure>
+
 
 !!! warning "Best Practice"
     Immediately **mute both your mobile device and your Agent Desktop** to avoid audio
@@ -646,7 +674,7 @@ Set your agent status to **Available** and answer the call.
     | 10 | 🤖 **AI Assist** | Observe the `[send_form]` action trigger again. Verify receipt of the second SMS. |
     | 11 | 🖥️ **Agent** | Say: *"The Patient Registration Form has been sent. Is there anything else I can assist you with?"* |
     | 12 | 📱 **Mobile** | Say: *"That's all, thank you. Goodbye."* |
-    | 13 | 🖥️ **Agent** | Review the **Suggested Wrap-up Code** and **Conversation Summary**. Select the appropriate code and click **Submit**. |
+    | 13 | 🖥️ **Agent** | Review the **Suggested Wrap-up Code** and **Conversation Summary**. Edit it if requrired and select the appropriate code and click **Submit**. |
 
     ???- tip "See how it works — AI Assistant (Summaries, Real-Time Assist, Real-Time transcript) & Form Delivery"
 
@@ -688,7 +716,8 @@ Set your agent status to **Available** and answer the call.
 
 **Step 1 — Reset Agent Status**
 
-Change your status to **Receso** (or Break).
+Set your agent status to **Set as Idle (all channels)** : select as reason: **Receso**.
+
 
 ---
 
@@ -716,7 +745,7 @@ When the IVR prompts for language, select **Spanish**.
 
 **Step 5 — Agent Desktop Reception**
 
-Answer the call in your Agent Desktop.
+Set your agent status to **Set as Available (all channels)** and the call will be answered **automatically**.
 
 !!! warning "Best Practice"
     Immediately **mute both your mobile device and your Agent Desktop** to avoid audio feedback.
@@ -735,9 +764,9 @@ Answer the call in your Agent Desktop.
     | # | Who | Action |
     |---|---|---|
     | 1 | 🖥️ **Agent** | Click **Get Assistance** in the AI Assistant chat. |
-    | 2 | 🖥️ **Agent** | Unmute Agent Desktop and say: *"Hola Caro, mi nombre es [Agente PodID]. Veo que necesita una resonancia magnética con el código de póliza BCBS-101, ¿es correcto?"* |
+    | 2 | 🖥️ **Agent** | Unmute Agent Desktop and say: *"Hola Caro, mi nombre es [Agente PodID]. Veo que necesita un ultrasonido con el código de póliza BCBS-101, ¿es correcto?"* |
     | 3 | 📱 **Mobile** | Unmute mobile and say: *"Sí, es correcto."* |
-    | 4 | 🤖 **AI Assist** | Observe suggested response in Spanish: *"Infórmale a Caro que su póliza BCBS-101 cubre el 70% del costo de la resonancia. Confirma que se requiere preautorización y solicita su número de teléfono para enviar el formulario por SMS."* |
+    | 4 | 🤖 **AI Assist** | Observe suggested response in Spanish: *"Infórmale a Caro que su póliza BCBS-101 cubre el 70% del costo del ultrasonido. Confirma que se requiere preautorización y solicita su número de teléfono para enviar el formulario por SMS."* |
     | 5 | 🖥️ **Agent** | Read the suggested response and ask: *"¿Está bien si envío el formulario de preautorización al número desde el que está llamando?"* |
     | 6 | 📱 **Mobile** | Say: *"Sí, está bien."* |
     | 7 | 🖥️ **Agent** | Copy the phone number from the **top panel** and paste it into the Real-Time Assist chat. Observe the `[send_form]` action trigger. |
@@ -746,7 +775,7 @@ Answer the call in your Agent Desktop.
     | 10 | 🤖 **AI Assist** | Observe the `[send_form]` action trigger again. Verify receipt of the second SMS. |
     | 11 | 🖥️ **Agent** | Say: *"El formulario de registro de paciente ha sido enviado. ¿Necesita alguna otra forma o asistencia?"* |
     | 12 | 📱 **Mobile** | Say: *"Eso es todo, gracias. Adiós."* |
-    | 13 | 🖥️ **Agent** | Review the **Suggested Wrap-up Code** and **Conversation Summary** in Spanish. Select the code and click **Submit**. |
+    | 13 | 🖥️ **Agent** | Review the **Suggested Wrap-up Code** and **Conversation Summary**. Edit it if requrired and select the appropriate code and click **Submit**. |
 
     ???- tip "See how it works — AI Assistant (Summaries, Real-Time Assist, Real-Time transcript) & Form Delivery - Spanish"
 

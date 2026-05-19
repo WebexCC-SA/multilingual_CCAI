@@ -804,7 +804,7 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
 
     {% raw %}
     ```python
-    {'WelcomeMsg': '{{WelcomeMsg}}', 'PersonaANI': '{{NewPhoneContact.ANI}}', 'Global_Language': '{{Global_Language}}'}
+    {'WelcomeMsg': '{{WelcomeMsg}}', 'PersonaANI': '{{PersonaANI}}', 'Global_Language': '{{Global_Language}}'}
     ```
     {% endraw %}
 

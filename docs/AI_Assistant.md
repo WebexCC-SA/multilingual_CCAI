@@ -319,18 +319,21 @@ Use the built-in **Preview** tool in the AI Agent Studio to simulate a live chat
         | Role | Message |
         |---|---|
         | 🤖 **Prompt** | Hi, how can I help you? |
-        | 👤 **User** | Help please |
-        | 🤖 **Prompt** | To assist you accurately with your Blue Cross Blue Shield coverage, may I please have the patient's name? |
-        | 👤 **User** | Caro |
-        | 🤖 **Prompt** | Thank you, Caro. Could you please provide the Blue Cross Blue Shield policy code and the specific procedure (MRI, X-Ray, Blood Test, or Ultrasound) you are inquiring about? |
-        | 👤 **User** | BCBS-101, MRI |
-        | 🤖 **Prompt** | For BCBS-101 policy, MRI procedures are covered at 70%, and pre-authorization is required. Could you please provide the patient's phone number so I can send the pre-authorization form via SMS? |
+        | 👤 **User** | I need help with MRI with policy |
+        | 🤖 **Prompt** | To assist you with MRI coverage under your BCBS policy, may I please have the patient's name and the specific BCBS policy code? This will help me provide accurate coverage and pre-authorization information. |
+        | 👤 **User** | Sophie, BCBS-101 |
+        | 🤖 **Prompt** | For Sophie with BCBS-101 policy, MRI coverage is 70%, and pre-authorization is required. Could you please provide Sophie's phone number so I can send the pre-authorization form via SMS? |
         | 👤 **User** | *Enter your phone number (include the + country code)* |
-        | 🤖 **Prompt** | The pre-authorization form for the MRI procedure under BCBS-101 has been sent to Caro's phone number. Is there any other form you would like me to send? |
+        | 🤖 **Prompt** | The pre-authorization form for Sophie's MRI under BCBS-101 has been sent to the provided phone number. Please check if any other insurance forms are needed, and I can assist with sending those as well. |
+        | 👤 **User** | I need also the patient registration form |
+        | 🤖 **Prompt** | I can send the Patient Registration Form to Sophie. Could you please confirm the patient's phone number to send the form via SMS? |
+        | 👤 **User** | *Enter your phone number (include the + country code)* |
+        | 🤖 **Prompt** | The Patient Registration Form has been sent to Sophie's phone number. Please let me know if there is anything else you need assistance with. °
+
 
     ???- tip "See how it works"
         <figure markdown>
-            ![Preview English](./assets/AIAssistantEN.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+            ![Preview English](./assets/AIAssistantEN.gif){ loading=lazy style="width: 60%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
         </figure>
 
 3. **Session Inspection**: Go to the **Sessions** tab inside the AI Assistant skill page.
@@ -374,14 +377,12 @@ Use the built-in **Preview** tool in the AI Agent Studio to simulate a live chat
         | Role | Message |
         |---|---|
         | 🤖 **Prompt** | Hola, ¿cómo puedo ayudarle? |
-        | 👤 **User** | Ayuda por favor|
-        | 🤖 **Prompt** | Para poder ayudarle mejor, ¿podría proporcionarme el nombre del paciente, por favor? |
+        | 👤 **User** | ayuda para hacer un ultrasonido con póliza BCBS-101 |
+        | 🤖 **Prompt** | Para el procedimiento de ultrasonido con la póliza BCBS-101, la cobertura es del 70% y se requiere preautorización. ¿Podría proporcionarme el nombre del paciente y su número de teléfono para enviarle el formulario de preautorización por SMS? |
         | 👤 **User** | Caro |
-        | 🤖 **Prompt** | Gracias, Caro. Para poder verificar la cobertura de su seguro, ¿podría indicarme el código de su póliza BCBS y el procedimiento médico que necesita, como resonancia magnética, rayos X, análisis de sangre o ultrasonido? |
-        | 👤 **User** | ultrasoindo, póliza BCBS-101 |
-        | 🤖 **Prompt** | Con la póliza BCBS-101 para un ultrasonido, la cobertura es del 70% y se requiere preautorización. Por favor, ¿podría proporcionarme el número de teléfono del paciente para enviarle el formulario de preautorización por SMS? |
+        | 🤖 **Prompt** | Gracias, Caro. Para enviarle el formulario de preautorización para el ultrasonido, ¿podría proporcionarme también su número de teléfono móvil? |
         | 👤 **User** | *Enter your phone number (include the + country code)* |
-        | 🤖 **Prompt** | He enviado el formulario de autorización para el ultrasonido a través de SMS al número +50660601075. ¿Necesita que le envíe algún otro formulario o le puedo ayudar con algo más? |
+        | 🤖 **Prompt** | He enviado el formulario de autorización para el ultrasonido a su número de teléfono. ¿Necesita que le ayude con algún otro formulario o trámite relacionado con su seguro? |
 
     ???- tip "See how it works"
         <figure markdown>
@@ -427,9 +428,9 @@ to enable Real-time Assist.
 
 ---
 
-### 2.1 Configure English Queue
+### 2.1 Configure English & Spanish Queue
 
-Search for your English queue: **PodXXX_Cumulus_EN** *(Replace XXX with your PodID)*.
+#### 1. Search for your English queue: **PodXXX_Cumulus_EN** *(Replace XXX with your PodID)*.
 Click to open. Scroll down to the **Real-time Assist** menu and configure as follows:
 
 | Field | Value |
@@ -444,19 +445,8 @@ Click **Save**.
         ![English Queue Real-Time Assist](./assets/realtimeassistEN.png){ width="800" }
     </figure>
 
----
-
-### 2.2 Configure Spanish Queue
-
-Return to the **Queue** tab and search for your Spanish queue: **PodXXX_Cumulus_ES**.
-Scroll down to the **Real-time assistance** menu and configure as follows:
-
-| Field | Value |
-|---|---|
-| **Apply Real-time assistance** | Toggle **ON** |
-| **Select a skill** | PodXXX_UseCase3_AIAssistantCumulus |
-
-Click **Save**.
+#### 2. Repeat **Step 1** for Spanish Queue.
+Return to the **Queue** tab and search for your Spanish queue: **PodXXX_Cumulus_ES**, Click to open, scroll down to the **Real-time Assist** menu, **Turn on** and select same Skill **PodXXX_UseCase3_AIAssistantCumulus**, click **Save**.
 
 !!! success "Result"
     Both queues are now **AI-enabled**, allowing the AI Assistant to provide real-time guidance
@@ -677,21 +667,21 @@ Set your agent status to **Set as Available (all channels)** and the call will b
     | 12 | 📱 **Mobile** | Say: *"That's all, thank you. Goodbye."* |
     | 13 | 🖥️ **Agent** | Review the **Suggested Wrap-up Code** and **Conversation Summary**. Edit it if requrired and select the appropriate code and click **Submit**. |
 
-    ???- tip "See how it works — AI Assistant (Summaries, Real-Time Assist, Real-Time transcript) & Form Delivery"
+???- tip "See how it works — AI Assistant (Summaries, Real-Time Assist, Real-Time transcript) & Form Delivery"
 
-        === "① Real-Time Assist Interaction"
+    === "① Real-Time Assist Interaction"
 
-            <figure markdown>
-                ![Real-Time Assist & Form Delivery](./assets/interaction_english.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
-            </figure>
-            > 👆 Observe how the AI Assistant surfaces the coverage data and triggers the `[send_form]` action in real time.
+        <figure markdown>
+            ![Real-Time Assist & Form Delivery](./assets/interaction_english.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+        </figure>
+        > 👆 Observe how the AI Assistant surfaces the coverage data and triggers the `[send_form]` action in real time.
 
-        === "② SMS Received by Patient"
+    === "② SMS Received by Patient"
 
-            <figure markdown>
-                ![SMS Form Delivery](./assets/sms_english.png){ width="300" }
-            </figure>
-            > 👆 Verify that the patient receives the SMS with the pre-authorization form link on their mobile device.
+        <figure markdown>
+            ![SMS Form Delivery](./assets/sms_english.png){ width="300" }
+        </figure>
+        > 👆 Verify that the patient receives the SMS with the pre-authorization form link on their mobile device.
 ---
 
 ## Phase 5: The "Live" Patient Journey — Spanish Testing
@@ -778,21 +768,21 @@ Set your agent status to **Set as Available (all channels)** and the call will b
     | 12 | 📱 **Mobile** | Say: *"Eso es todo, gracias. Adiós."* |
     | 13 | 🖥️ **Agent** | Review the **Suggested Wrap-up Code** and **Conversation Summary**. Edit it if requrired and select the appropriate code and click **Submit**. |
 
-    ???- tip "See how it works — AI Assistant (Summaries, Real-Time Assist, Real-Time transcript) & Form Delivery - Spanish"
+???- tip "See how it works — AI Assistant (Summaries, Real-Time Assist, Real-Time transcript) & Form Delivery - Spanish"
 
-        === "① Real-Time Assist Interaction Spanish"
+    === "① Real-Time Assist Interaction Spanish"
 
-            <figure markdown>
-                ![Real-Time Assist & Form Delivery Spanish](./assets/spanish_interaction.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
-            </figure>
-            > 👆 Observe how the AI Assistant surfaces the coverage data and triggers the `[send_form]` action in real time.
+        <figure markdown>
+            ![Real-Time Assist & Form Delivery Spanish](./assets/spanish_interaction.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+        </figure>
+        > 👆 Observe how the AI Assistant surfaces the coverage data and triggers the `[send_form]` action in real time.
 
-        === "② SMS Received by Patient - Spanish"
+    === "② SMS Received by Patient - Spanish"
 
-            <figure markdown>
-                ![SMS Form Delivery](./assets/sms_spanish.png){ width="300" }
-            </figure>
-            > 👆 Verify that the patient receives the SMS with the pre-authorization form link on their mobile device, all in Spanish.
+        <figure markdown>
+            ![SMS Form Delivery](./assets/sms_spanish.png){ width="300" }
+        </figure>
+        > 👆 Verify that the patient receives the SMS with the pre-authorization form link on their mobile device, all in Spanish.
 
 ---
 

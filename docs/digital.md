@@ -177,7 +177,9 @@ click on the black button **Build your AI Agent**.
 
 **Step 2 - Export the Template Agent**
 
-In the search bar, type `UseCase2_English` to locate the AI Agent. <br>
+1. Navigate to the **AI Agent** tab (first tab) in the AI Agent Studio.
+
+2. In the search bar, type `UseCase2_English` to locate the AI Agent. <br>
 Under **UseCase2_English**, click the **three dots (...)** and select **Export agent**.
 This will download the `UseCase2_English.json` file to your local machine. Save it in your **Desktop** folder.
 

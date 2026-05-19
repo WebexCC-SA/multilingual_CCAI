@@ -635,7 +635,8 @@ Click the blue **Make Live** button, select your asset **`PodXXX_Cumulus_WebChat
     Ensure you have downloaded the Cumulus Hospital logo to your local machine
     and saved it as **Cumulus_Hospital.png** on your desktop (See [Step 1.2 — Multilingual Survey Creation](#12-multilingual-survey-creation)).
 
-Navigate to **Control Hub > Contact Center > Digital Assets** and locate the asset
+
+Navigate to **Control Hub > Contact Center > Digital Settings > Web Chat Assets** and locate the asset
 **PodXXX_Cumulus_WebChat**, and click on it to open the configuration settings:
 
 **Asset Settings**
@@ -717,7 +718,7 @@ If you do not get the error, click **Done**.
 
 ### 4.3 Apply Branded HTML Structure
 
-Apply the recommended branded HTML structure for Cumulus Healthcare. Copy and paste this:
+Replace the existing HTML with the recommended branded HTML structure for Cumulus Healthcare. Copy and paste this:
 ```html
 <!DOCTYPE html> 
 <html lang="en"> 

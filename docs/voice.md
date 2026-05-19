@@ -165,9 +165,7 @@ Scheduling an Appointment:
 
 4. Create appointment: Convert the "Time_slot" into format "YYYY-MM-DD" (using current
    2026 year) and use the [create_appointment] action with the collected details to create
-   the appointment. DO NOT mention SMS confirmation if you don't have customer ANI
-   {{PersonaANI}}. If you have {{PersonaANI}} information, you can mention that an SMS
-   will be sent shortly with the schedule confirmation.
+   the appointment. Use variable {{PersonaANI}} you got from flow. DO NOT mention SMS confirmation if you don't have customer ANI {{ PersonaANI }} value . If you have {{ PersonaANI }} value, you can mention that an SMS will be sent shortly with the schedule confirmation.
 
 C: Response Guidelines
 
@@ -539,8 +537,8 @@ existing template.
 3. Go back to **Services** and find your Service named **PodXXX_LTRCCT2001_CUMULUS**. Enter it,
    navigate to **Flows**, and click **Create Flow**.
 
-4. Fill in the name `UseCase1_AIAgent_create_appointment` and select the JSON file
-   you just exported to import it. Click **Create**.
+4. Fill in the name `UseCase1_AIAgent_create_appointment`, select "Upload a flow" from "Method" and select the JSON file you just exported to import it. Click **Create**.
+
 
 5. Wait until the flow opens. Click **Parse** and **Save** on the first node.
 
@@ -558,7 +556,15 @@ existing template.
         | **Node 2** | Airtable POST that creates the scheduling / appointment |
         | **Remaining nodes** | Send SMS confirmation based on customer language |
 
-6. Click **Make Live** to publish your flow.
+
+6. Double-click each **SMS** node, select `CONNCT` from the **From Number** dropdown, and click **Save**. Repeat this for all **4 SMS nodes** in the flow.
+
+    ???- tip "See how to import the flow"
+        <figure markdown>
+            ![SMS Node Modification](./assets/Connect.png){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+        </figure>
+
+7. Click **Make Live** to publish your flow.
 
 ---
 
@@ -575,7 +581,7 @@ existing template.
     | Field | Value |
     |---|---|
     | **Action Name** | create_appointment |
-    | **Action Description** | Create an appointment for the patient using "PersonaID", "PersonaName" at the preferred day and time chosen by the patient. You must convert the date provided by the patient in the following format prior to executing the action: YYYY-MM-DD |
+    | **Action Description** | Create an appointment for the patient using "PersonaID" value , "PersonaName" value at the preferred day and time chosen by the patient. Yo got "PersonaName" from previous action [customer_details]. You must convert the date provided by the patient in the following format prior to executing the action: YYYY-MM-DD |
 
 3. Click **+ New input entity** for each entity below: <br>
 `use the arrow > to navigate from Entity 1 to Entity 8`:
@@ -600,7 +606,7 @@ existing template.
         |---|---|
         | **Entity Name** | PersonaName |
         | **Entity Type** | String |
-        | **Entity Description** | This is the Patient name — use "PersonaName" obtained from the `customer_details` action |
+        | **Entity Description** | This is the Patient name — use "PersonaName" value you got from action customer_details |
         | **Setting** | ✅ Required |
 
         ??? note "See Example - Entity 2: PersonaName"
@@ -684,7 +690,7 @@ existing template.
         |---|---|
         | **Entity Name** | PersonaANI |
         | **Entity Type** | String |
-        | **Entity Description** | Patient ANI to be used for sending SMS confirmation. Use the variable `{{PersonaANI}}` to fill this information. |
+        | **Entity Description** | Patient ANI to be used for sending SMS confirmation. Use the variable {{ PersonaANI }} you got from the flow, don't ask it to end customer |
         | **Setting** | ✅ Required |
     
         ??? note "See Example - Entity 8: PersonaANI"
@@ -703,6 +709,8 @@ existing template.
     Click **Add**.
 
 **Save changes**
+
+5. In the **Actions** tab, disable the system default action **Agent Handover**, this AI Agent does not transfer calls to a human agent.
 
 ---
 

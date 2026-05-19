@@ -613,6 +613,18 @@ Configure the node with the following settings:
     </figure>
     > 👆 Set the **Preferred Language** field to **Spanish** to trigger the Spanish CSAT survey.
 
+
+Click the blue **Make Live** button, select your asset **`PodXXX_Cumulus_WebChat`** from the **Application** dropdown, and click **Make Live** again.
+
+!!! note "Going Live"
+    It will take approximately **3 minutes** for the status to change to **Live**.
+    You can continue working in the meantime.
+
+???- tip "See how it works"
+    <figure markdown>
+      ![Make Live a Webex Connect Flow](./assets/flow_make_live.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+    </figure>
+
 ---
 
 ## Phase 4: Web Asset & W3Schools Simulation

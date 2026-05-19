@@ -218,9 +218,9 @@ In this phase, you will provision the "Brain" of the agent-assist experience. We
         | Field | Value |
         |---|---|
         | **Name** | phone_number |
-        | **Type** | Number |
+        | **Type** | String |
         | **Description** | Patient mobile number to send SMS with forms, captured by the AI Assistant. |
-        | **Entity Examples** | 7863738922 |
+        | **Entity Examples** | +17863738922 |
         | **Setting** | **Required** |
         | **Agent Review Required** | No |
 

@@ -51,7 +51,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
     | **Service Level Threshold** | 60 seconds |
     | **Timezone** | America/Los_Angeles |
 
-4. Click **save**
+4. Click **Create**
 
 ---
 
@@ -384,7 +384,7 @@ and navigate to your own service: **PodXXX_LTRCCT2001_CUMULUS**.
 
 ### 3.2 Open the Flow
 
-Open the **UseCase2_webChat** flow.
+Click on **UseCase2_webChat** flow to open it
 You will see the complete architecture for our bilingual digital journey.
 Your task is to "activate" the orchestration by mapping the variables and agents.
     <figure markdown>

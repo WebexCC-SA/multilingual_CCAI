@@ -266,10 +266,28 @@ will be used by our AI Agent.
 
 ---
 
-### 1.6 Test the AI Agent — Knowledge Base Validation
+### 1.6 Explore Language & Voice Settings
 
-Before proceeding with the actions configuration, let's validate the AI Agent
-using the Knowledge Base only.
+1. Go to the **Conversation** tab on your AI Agent configuration.
+
+    ???+ info "Key Learning — Language & Voice"
+        By default, the AI Agent is created in **English** using the **Jennifer** voice.
+        You can explore other languages and voices by changing the values in this tab.
+
+        > 💡 When making a live voice call using the Flow Builder, the language and voice
+        > settings configured in the flow will **overwrite** the values set here. This is
+        > how we can **reuse the same bot in different languages** for AI Agent voice calls.
+
+    ???- tip "See how to change language settings"
+        <figure markdown>
+            ![Changing Language AI Agent](./assets/ChangingLanguageAIAgent.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+        </figure>
+
+---
+
+### 1.7 Test the AI Agent — Knowledge Base Validation
+
+Before proceeding with the actions configuration, validate that your Knowledge Base is already processed, then validate the AI Agent using the Knowledge Base only.
 
 !!! warning "Before You Begin"
     Make sure your **headset is connected** to your computer before starting the preview.
@@ -302,29 +320,11 @@ using the Knowledge Base only.
         <figure markdown>
             ![Preview AI Agent](./assets/PreviewAIAgent.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
         </figure>
----
-
-### 1.7 Explore Language & Voice Settings
-
-1. Go to the **Conversation** tab on your AI Agent configuration.
-
-    ???+ info "Key Learning — Language & Voice"
-        By default, the AI Agent is created in **English** using the **Jennifer** voice.
-        You can explore other languages and voices by changing the values in this tab.
-
-        > 💡 When making a live voice call using the Flow Builder, the language and voice
-        > settings configured in the flow will **overwrite** the values set here. This is
-        > how we can **reuse the same bot in different languages** for AI Agent voice calls.
-
-    ???- tip "See how to change language settings"
-        <figure markdown>
-            ![Changing Language AI Agent](./assets/ChangingLanguageAIAgent.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
-        </figure>
 
     
-    ???- tip "Do you want to try in Spanish? See the full test script"
+???- tip "Do you want to try in Spanish? See the full test script"
 
-        Once you've switched the language to **Spanish en-US**, go ahead and update the welcome message to:
+    Once you've switched the language to **Spanish en-US**, go ahead and update the welcome message to:
 
         ```
         Gracias por llamar al hospital Cumulus, ¿cómo te ayudo hoy?
@@ -374,7 +374,7 @@ Autonomous AI Agent.
 
 1. From the **Integrations** window, click on **AI Agent**.
 
-2. Copy and paste the following JSON in the **Configure AI Agent Event** field:
+2. Copy and paste the following JSON in the **Configure AI Agent Event** field, you should replace the default existing JSON:
 
     ```json
     { "PersonaID": "001" }
@@ -438,7 +438,7 @@ Autonomous AI Agent.
     | **Notification Settings** | Notify AI Agent |
     | **Define JSON** | Enter JSON |
 
-    Copy and paste the following JSON:
+    Copy and paste the following JSON, you should replace the default existing JSON:
 
     ```json
     {
@@ -555,7 +555,7 @@ existing template.
         | Node | Function |
         |---|---|
         | **Node 1** | Data passed by AI Agent to this flow |
-        | **Node 2** | Airtable PUT that creates the scheduling / appointment |
+        | **Node 2** | Airtable POST that creates the scheduling / appointment |
         | **Remaining nodes** | Send SMS confirmation based on customer language |
 
 6. Click **Make Live** to publish your flow.

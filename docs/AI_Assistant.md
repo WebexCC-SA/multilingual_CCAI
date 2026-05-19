@@ -445,7 +445,7 @@ Click **Save**.
         ![English Queue Real-Time Assist](./assets/realtimeassistEN.png){ width="800" }
     </figure>
 
-- Repeat **Step 1** for Spanish Queue.
+- Repeat **Step 1**.
 Return to the **Queue** tab and search for your Spanish queue: **PodXXX_Cumulus_ES**, Click to open, scroll down to the **Real-time Assist** menu, **Turn on** and select same Skill **PodXXX_UseCase3_AIAssistantCumulus**, click **Save**.
 
 !!! success "Result"

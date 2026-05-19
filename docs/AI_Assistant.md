@@ -36,10 +36,11 @@ Welcome to our final core use case. You’ve mastered the voice and digital pati
 In this phase, you will provision the "Brain" of the agent-assist experience. We will build the master AI Assistant and assign it to the respective Knowledge Base.
 
 !!! note "Prerequisite"
-    Ensure you have downloaded the source document for the Knowledge Base. 
-    Click [Download](https://qaemailmedia.s3.amazonaws.com/ba7f153c-fb89-4dbf-a6f6-2a6628dfde7c/UseCase3_Cumulus_Hospital_AI_Assistant_KB_2058921675493421.pdf) 
-    to save the file to your Desktop folder as:
-    `UseCase3_CumulusHospital_AIAssistant_KB`
+    Ensure you have downloaded the source document for the Knowledge Base.
+    Right-click the link below, select **Open in New Tab**, and save the file to your
+    **Desktop** folder as `UseCase3_CumulusHospital_AIAssistant_KB`.
+
+    [📄 Download Knowledge Base Document](https://qaemailmedia.s3.amazonaws.com/ba7f153c-fb89-4dbf-a6f6-2a6628dfde7c/UseCase3_Cumulus_Hospital_AI_Assistant_KB_2058921675493421.pdf)
 
 ---
 

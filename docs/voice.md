@@ -212,8 +212,10 @@ will be used by our AI Agent.
 
 !!! note "Prerequisite"
     Ensure you have downloaded the Knowledge Base document to your local machine.
-    Click [Download](https://qaemailmedia.s3.amazonaws.com/ba7f153c-fb89-4dbf-a6f6-2a6628dfde7c/UseCase1_AIAgentCumulus_5131824007205709.pdf) and save
-    the file to your Desktop as: `UseCase1_AIAgentCumulus.pdf`
+    Right-click the link below, select **Open in New Tab**, and save the file to your
+    **Desktop** as `UseCase1_AIAgentCumulus.pdf`.
+
+    [📄 Download Knowledge Base Document](https://qaemailmedia.s3.amazonaws.com/ba7f153c-fb89-4dbf-a6f6-2a6628dfde7c/UseCase1_AIAgentCumulus_5131824007205709.pdf)
 
 1. On the left panel of the AI Agent Studio, click **Knowledge** to open the KB page.
 
@@ -283,60 +285,6 @@ will be used by our AI Agent.
 
 ---
 
-### 1.7 Test the AI Agent — Knowledge Base Validation
-
-Before proceeding with the actions configuration, validate that your Knowledge Base is already processed, then validate the AI Agent using the Knowledge Base only.
-
-!!! warning "Before You Begin"
-    Make sure your **headset is connected** to your computer before starting the preview.
-
-1. Click **Preview** and **Start a call**.
-
-2. Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
-
-    - **Location Information**: The agent provides accurate information about hospital locations.
-    - **Services by Location**: The agent describes services available at each location.
-    - **Facilities**: The agent answers questions about hospital facilities.
-    - **Preparation Information**: The agent provides preparation instructions for procedures.
-    - **Specialty Availability**: The agent identifies which locations offer specific specialties.
-
-    ???- tip "Need help? See the full test script"
-
-        | Role | Message |
-        |---|---|
-        | 👤 **User** | Which are the locations in the USA? |
-        | 👤 **User** | Which services do we have in the New York location? |
-        | 👤 **User** | Do you provide parking at the hospital? |
-        | 👤 **User** | What is the preparation for a blood test? |
-        | 👤 **User** | Which locations offer a cardiologist? |
-
-3. **Session Inspection**: Click on **Sessions** and select the transaction you just
-   made to open the transcription window. When finished, close the session window and
-   return to the **Configuration** tab of your AI Agent.
-
-    ???- tip "See how it works"
-        <figure markdown>
-            ![Preview AI Agent](./assets/PreviewAIAgent.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
-        </figure>
-
-    
-???- tip "Do you want to try in Spanish? See the full test script"
-
-    Once you've switched the language to **Spanish en-US**, go ahead and update the welcome message to:
-
-        ```
-        Gracias por llamar al hospital Cumulus, ¿cómo te ayudo hoy?
-        ```
-
-        | Role | Use | Message |
-        |---|---|---|
-        | 👤 **User** | Location | ¿Cuáles son las ubicaciones en los EE. UU.? |
-        | 👤 **User** | Services | ¿Qué servicios tenemos en la ubicación de Nueva York? |
-        | 👤 **User** | Facilities | ¿Ofrecen estacionamiento en el hospital? |
-        | 👤 **User** | Preparation | ¿Cuál es la preparación para un análisis de sangre? |
-        | 👤 **User** | Specialty | ¿Qué ubicaciones ofrecen un cardiólogo? |
-
----
 
 ## Phase 2: Building the Actions
 
@@ -722,6 +670,9 @@ existing template.
 
 ### 2.8 Test the AI Agent — Full Actions Validation
 
+!!! warning "Before You Begin"
+    Make sure your **headset is connected** to your computer before starting the preview.
+
 It's **TEST time**! Click **Preview** and **Start a call**.
 
 Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
@@ -730,6 +681,8 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
   start of every interaction.
 - **Location & Services**: The agent consults the KB to offer correct locations for
   the requested specialty.
+- **Facilities**: The agent answers questions about hospital facilities.
+- **Preparation Information**: The agent provides preparation instructions for procedures.
 - **Date & Time Validation**: The agent only accepts **weekdays in June 2026**,
   between **8am and 6pm**.
 - **Appointment Creation**: The agent creates the appointment and confirms the details
@@ -753,9 +706,40 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
     | 🤖 **Prompt** | What date and time would you prefer? |
     | 👤 **User** | June 10th at 10am |
     | 🤖 **Prompt** | *(Agent creates appointment and confirms SMS will be sent)* |
+    | 👤 **User** | Do you provide parking at the hospital? |
+    | 🤖 **Prompt** | Yes, Cumulus Hospital in New York offers paid parking for patients. The cost is twenty dollars per hour, or one hundred fifty dollars for a twenty-four hour period. Is there anything else I can assist you with?|
+    | 👤 **User** | What is the preparation for the appointment? |
+    | 🤖 **Prompt** | he general preparation guidelines for your appointment:.....|
+
 
 !!! warning "Important"
     After testing, **Publish your AI Agent** with comment `V2`, so we can proceed to Task 3 and test it with a real live call.
+
+**Session Inspection**: Click on **Sessions** and select the transaction you just
+   made to open the transcription window. When finished, close the session window and
+   return to the **Configuration** tab of your AI Agent.
+
+???- tip "See how it works"
+    <figure markdown>
+        ![Preview AI Agent](./assets/PreviewAIAgent.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+    </figure>
+
+ 
+???- tip "Do you want to try in Spanish? See the full test script"
+
+    Once you've switched the language to Spanish en-US, go ahead and update the welcome message to:
+
+        ```
+        Gracias por llamar al hospital Cumulus, ¿cómo te ayudo hoy?
+        ```
+
+        | Role | Use | Message |
+        |---|---|---|
+        | 👤 **User** | Location | ¿Cuáles son las ubicaciones en los EE. UU.? |
+        | 👤 **User** | Services | ¿Qué servicios tenemos en la ubicación de Nueva York? |
+        | 👤 **User** | Facilities | ¿Ofrecen estacionamiento en el hospital? |
+        | 👤 **User** | Preparation | ¿Cuál es la preparación para un análisis de sangre? |
+        | 👤 **User** | Specialty | ¿Qué ubicaciones ofrecen un cardiólogo? |
 
 ---
 

@@ -403,7 +403,7 @@ Autonomous AI Agent.
     | **Method** | GET |
     | **Endpoint URL** | `https://api.airtable.com/v0/appvCQpTfOVVLcRmR/tblLGr9Ibkh79FPaD?filterByFormula={PersonaID}='$(n2.aiAgent.PersonaID)'` |
     | **Header** | Authorization |
-    | **Value** | `It will be shared by your proctor` |
+    | **Value** | ``Provided by your proctor in the Credentials guide — copy and paste the full token including the word Bearer` |
     | **Connection Timeout** | 5000 |
     | **Request Timeout** | 5000 |
 

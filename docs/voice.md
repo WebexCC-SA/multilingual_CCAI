@@ -427,6 +427,12 @@ Autonomous AI Agent.
 
 1. Click on the **Configuration** icon and select **Flow Outcomes**.
 
+    ???- tip "See how to configure Flow Outcomes"
+        <figure markdown>
+            ![Config - Flow Outcomes](./assets/flow_outcomes.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+        </figure>
+
+
 2. Verify that the first line **Notify** is **Enabled**.
 
 3. Click the arrow to open **Last Execution Status** and configure as follows:

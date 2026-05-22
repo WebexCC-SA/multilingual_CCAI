@@ -730,7 +730,7 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
 
         | Role | Use | Message |
         |---|---|---|
-        | 👤 **User** | Location | ¿Cuáles son las ubicaciones en los EE. UU.? |
+        | 👤 **User** | Location | ¿Cuáles son las ubicaciones del hospital? |
         | 👤 **User** | Services | ¿Qué servicios tenemos en la ubicación de Nueva York? |
         | 👤 **User** | Facilities | ¿Ofrecen estacionamiento en el hospital? |
         | 👤 **User** | Preparation | ¿Cuál es la preparación para un análisis de sangre? |

@@ -427,8 +427,10 @@ to enable Real-time Assist.
 
 ### 2.1 Configure English & Spanish Queue
 
-- Search for your English queue: **PodXXX_Cumulus_EN** *(Replace XXX with your PodID)*.
-Click to open. Scroll down to the **Real-time Assist** menu and configure as follows:
+- Search for your English & Spanish queues: **PodXXX_Cumulus_EN**, **PodXXX_Cumulus_ES** *(Replace XXX with your PodID)*. 
+- Select both at the same time.
+- Click **Edit AI Features**
+- Click the **Real-time Assist** checkbox and configure as follows:
 
 | Field | Value |
 |---|---|
@@ -439,11 +441,8 @@ Click **Save**.
 
 ???- tip "See how to configure"
     <figure markdown>
-        ![English Queue Real-Time Assist](./assets/realtimeassistEN.png){ width="800" }
+        ![English Queue Real-Time Assist](./assets/realtimeassistEN.png){ width="1000" }
     </figure>
-
-- Repeat **Step 1**.
-Return to the **Queue** tab and search for your Spanish queue: **PodXXX_Cumulus_ES**, Click to open, scroll down to the **Real-time Assist** menu, **Turn on** and select same Skill **PodXXX_UseCase3_AIAssistantCumulus**, click **Save**.
 
 !!! success "Result"
     Both queues are now **AI-enabled**, allowing the AI Assistant to provide real-time guidance

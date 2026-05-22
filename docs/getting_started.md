@@ -1,5 +1,10 @@
 # Getting Started
 
+!!! note "Modular by Design"
+    Each lab in this session is **fully independent**. You can complete them 
+    in any order based on your interests and available time.
+
+
 ## 1 Disclaimer
 
 Although the lab design and configuration examples provided throughout this session can be used as a reference, for design-related questions please consult the official documentation at [help.webex.com](https://help.webex.com).
@@ -66,9 +71,16 @@ representing the different user roles throughout the labs.
 
 ### 3.1 Lab Credentials
 All credentials for this session have been pre-provisioned by the lab proctors. <br>
-Open the file **`LTRCCT-2001_Credentials.txt`** located on the **Desktop** of your lab machine, it contains
-everything you need to get started. <br>
-A physical copy has also been provided to you at your seat.
+
+Your pod has been pre-assigned to a desktop. Please use **one** of the following options to retrieve your credentials: <br>
+
+  **Option 1 – Lab Assistant (Primary)**  
+  If not already open, navigate to the following link in your browser: 
+  [https://lab-assistant.com/](https://lab-assistant.com/)
+
+  **Option 2 – Credentials File (Backup)**  
+  Open the file **`LTRCCT-2001_Credentials.txt`** located on the **Desktop** of your lab machine.
+
 
 | Role | Username | Password |
 |---|---|---|

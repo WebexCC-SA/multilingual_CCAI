@@ -21,9 +21,6 @@ Welcome to our final core use case. You’ve mastered the voice and digital pati
     In high-stakes healthcare, **AI is about augmentation**. You will learn how to leverage **context preservation** (passing data from the AI Agent to the Human Agent) and the **AI Assistant** to drive down **Average Handle Time (AHT)**, ensure clinical accuracy, and build lasting patient trust.
     
 
-???+ note "Section Independence"
-    Section 3 is **entirely independent**. We have pre-configured the complete voice environment, including queues, profiles, and flows, so you can focus exclusively on testing the AI Assistant’s real-time **augmentation capabilities**.
-
 ???+ warning "The PodID Discipline"
     Always replace **XXX** with your assigned **3-digit ID (e.g., 001, 002)**. Your naming convention must start with the prefix **Pod** followed by your PodID **(PodXXX)**. If you do not follow this convention exactly, you will overwrite your neighbor's work. Stay disciplined with your naming convention!
 

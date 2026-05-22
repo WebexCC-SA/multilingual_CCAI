@@ -23,12 +23,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
 ???+ info "Key Learning"
     Unlike voice, digital flows require **distinct agents per language** to maintain
     session integrity across the web widget.
-
-???+ note "Section Independence"
-    Section 2 is entirely independent of Section 1. We have pre-configured the AI Agents
-    so you can focus on orchestration, multilingual deployment, and quality measurement.
-    We are proving how easily we can scale a digital experience and measure the
-    "Pulse" of patient satisfaction in real-time.
+    
 
 ???+ warning "The PodID Discipline"
     Always replace **XXX** with your assigned **3-digit ID (e.g., 001, 002)**. Your naming convention must start with the prefix **Pod** followed by your PodID **(PodXXX)**. If you do not follow this convention exactly, you will overwrite your neighbor's work. Stay disciplined with your naming convention!

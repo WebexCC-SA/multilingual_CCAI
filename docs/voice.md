@@ -19,7 +19,7 @@ Welcome to our first AI Agent activity at Cisco Live! In this lab, we will work 
 and medical specialties across the USA and Mexico.
 
 Imagine this: a patient calls from Las Vegas or from Mexico City, needs a specialist,
-and wants to book an appointment — **right now**, in their own language. Your mission
+and wants to book an appointment, **right now**, in their own language. Your mission
 is to make that possible.
 
 ???+ info "Key Learning"
@@ -27,11 +27,6 @@ is to make that possible.
     Studio, serving patients in both **English and Spanish** — handling information
     requests, validating schedules, and confirming appointments via SMS.
 
-
-???+ note "Section Independence"
-    Section 1 is **entirely independent**. We have pre-configured the complete environment
-    so you can focus exclusively on building your **Autonomous AI Agent from scratch**,
-    connecting it to the Voice Flow, and validating the end-to-end multilingual experience.
 
 ???+ warning "The PodID Discipline"
     Always replace **XXX** with your assigned **3-digit ID (e.g., 001, 002)**. Your naming

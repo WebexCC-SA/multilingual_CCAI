@@ -3,7 +3,16 @@
 {% extends "main.html" %}
 {% block tabs %}
 {{ super() }}
+
 <style>
+
+    :root {
+        --md-primary-fg-color: #07182D;
+        --md-primary-fg-color--light: #07182D;
+        --md-primary-fg-color--dark: #07182D;
+        --md-default-bg-color: #07182D;
+    }
+
     .md-container {
         height: 100%;
         background: var(--md-primary-fg-color);
@@ -13,8 +22,8 @@
 
     .md-main {
         flex-grow: 0;
-        height: 0px;
-        background: var(--md-primary-fg-color)
+        height: 0;
+        background: var(--md-primary-fg-color);
     }
 
     .md-main__inner {
@@ -23,228 +32,130 @@
     }
 
     .tx-container {
-        padding-top: .0rem;
         background: var(--md-primary-fg-color);
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
     }
 
     .tx-hero {
-        margin: 32px 2.8rem;
-        color: var(--md-primary-bg-color);
-        justify-content: center;
-        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem;
+        color: white;
     }
 
-    .tx-hero h1 {
-        margin-bottom: 0.5rem;
-        color: currentColor;
-        font-weight: 700
-    }
-
-    .tx-hero p {
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-        color: currentColor;
-        font-size: 1.1rem;
-        font-weight: 300;
-        opacity: 0.85;
-    }
-
-    :root {
-        .tx-hero__content {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-    }
+    /* LEFT SIDE */
 
     .tx-hero__content {
-        padding-bottom: 1rem;
-        margin: 0 auto;
+        flex: 1;
+        max-width: 520px;
     }
 
-    .tx-hero__logo {
-        scale: 1;
-        width: 65%;
-        padding-bottom: 50px;
+    .tx-hero__content h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: white;
+        line-height: 1.1;
     }
 
-    .tx-hero__image {
-        width: 650px;
-        height: 65vh;
-        order: 0;
+    .tx-hero__content p {
+        font-size: 0.98rem;
+        line-height: 1.5;
+        font-weight: 300;
+        opacity: 0.9;
+        margin-bottom: 1.8rem;
+        color: white;
     }
 
-    .tx-hero .md-button {
-        margin-top: .5rem;
-        margin-right: .5rem;
-        color: var(--md-primary-bg-color)
-    }
+    /* BUTTON */
 
     .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: rgb(0, 0, 0);
-        border-color: var(--md-primary-bg-color)
+        background: white;
+        color: black;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 30px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        transition: all 0.2s ease;
     }
 
-    .tx-hero .md-button:focus,
-    .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
+    .tx-hero .md-button--primary:hover {
+        background: #00c3ff;
+        color: black;
     }
 
-    .feature-item h2 svg {
-        height: 30px;
-        float: left;
-        margin-right: 10px;
-        transform: translateY(10%);
+    /* RIGHT SIDE IMAGE */
+
+    .tx-hero__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .top-hr {
-        margin-top: 42px;
-        background: var(--md-primary-fg-color)
+    .tx-hero__image img {
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+        object-fit: contain;
+        opacity: 0.95;
     }
 
-    .feature-item {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        box-sizing: border-box;
-        padding: 0 15px;
-        word-break: break-word
-    }
+    /* REMOVE SIDEBARS */
 
-    .feature-item h2 {
-        color: var(--md-default-fg-color);
-        font-weight: 300;
-        font-size: 25px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: normal;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: inherit;
-    }
+    @media screen and (min-width: 60em) {
 
-    .feature-item p {
-        font-size: 16px;
-        line-height: 1.8em;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        color: var(--md-default-fg-color);
-        margin: 0 0 10px;
-        display: block;
-    }
-
-    .feature-item path {
-        fill: var(--md-default-fg-color);
-    }
-
-    @media screen and (max-width:30em) {
-        .tx-hero h1 {
-            font-size: 1.4rem
+        .md-sidebar--secondary {
+            display: none;
         }
     }
 
-    @media screen and (min-width:60em) {
-        .md-sidebar--secondary {
-            display: none
+    @media screen and (min-width: 76.25em) {
+
+        .md-sidebar--primary {
+            display: none;
+        }
+    }
+
+    /* MOBILE */
+
+    @media screen and (max-width: 960px) {
+
+        .tx-container {
+            min-height: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
         .tx-hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
         }
 
-        .tx-hero__content {
-            margin-top: 3.5rem;
-            margin-bottom: 3.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
-            align-items: center;
-        }
-    }
-
-    @media screen and (min-width:76.25em) {
-        .md-sidebar--primary {
-            display: none
+        .tx-hero__content h1 {
+            font-size: 1.9rem;
         }
 
-        .top-hr {
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
+        .tx-hero__content p {
+            font-size: 0.92rem;
         }
 
-        .bottom-hr {
-            margin-top: 10px;
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .feature-item {
-            flex: 1;
-            min-width: 0;
+        .tx-hero__image img {
+            max-width: 220px;
         }
     }
 
-    .hr {
-        border-bottom: 1px solid #eee;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .text-center {
-        text-align: center;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 15px;
-        font-family: 'Lato', sans-serif;
-        font-size: 23px;
-        font-weight: 300;
-        padding-bottom: 10px;
-    }
-
-    .logos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: row wrap;
-        margin: 0 auto;
-    }
-
-    .logos img {
-        flex: 1 1 auto;
-        padding: 25px;
-        max-height: 130px;
-        vertical-align: middle;
-    }
-
-    .hr-logos {
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .md-footer-meta__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.0rem;
-    }
-
-    .md-footer-social {
-        padding-top: 20px;
-    }
+    /* FADE ANIMATION */
 
     .hold {
         animation: fadein;
@@ -252,45 +163,82 @@
     }
 
     @keyframes fadein {
-        0% { opacity: 0 }
-        90% { opacity: .5; }
-        100% { opacity: .75; }
+
+        0% {
+            opacity: 0;
+        }
+
+        90% {
+            opacity: .5;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     #six {
-        animation-duration: 80ms;
+        animation-duration: 600ms;
         opacity: 0;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
     }
+
 </style>
 
-<!-- Main site Entry button descriptions -->
+<!-- HERO SECTION -->
+
 <section class="tx-container">
+
     <div class="md-grid md-typeset">
+
         <div class="tx-hero">
+
+            <!-- LEFT SIDE -->
+
             <div class="tx-hero__content">
 
                 <h1>LTRCCT-2001</h1>
-                <p>Demystifying Multilingual Omnichannel Experiences with Webex Contact Center AI</p>
 
-                <div class="tx-hero__image">
-                    <img src="../template_assets/exclamacion.png"
-                         draggable="false"
-                         style="width: 100%; height: 65vh; object-fit: contain;">
-                </div>
+                <p>
+                    Demystifying Multilingual Omnichannel Experiences
+                    with Webex Contact Center AI
+                </p>
 
                 <div id="six" class="hold">
-                    <a href="overview/" title="{{ page.next_page.title | striptags }}"
-                        class="md-button md-button--primary">
+
+                    <a href="overview/"
+                       title="{{ page.next_page.title | striptags }}"
+                       class="md-button md-button--primary">
+
                         Get started
+
                     </a>
+
                 </div>
 
             </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="tx-hero__image">
+
+                <img
+                    src="./template_assets/exclamacion.png"
+                    draggable="false"
+                >
+
+            </div>
+
         </div>
+
     </div>
+
 </section>
 
 {% endblock %}
-{% block content %} {% endblock %}
-{% block footer %} {% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

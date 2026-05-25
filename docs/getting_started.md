@@ -72,14 +72,14 @@ representing the different user roles throughout the labs.
 ### 3.1 Lab Credentials
 All credentials for this session have been pre-provisioned by the lab proctors. <br>
 
-Your pod has been pre-assigned to a desktop. Please use **one** of the following options to retrieve your credentials: <br>
+Your **pod** has been pre-assigned to a desktop. Please use **one** of the following options to retrieve your credentials: <br>
 
   **Option 1 – Lab Assistant (Primary)**  
   If not already open, navigate to the following link in your browser: 
   [https://lab-assistant.com/](https://lab-assistant.com/)
 
   **Option 2 – Credentials File (Backup)**  
-  Open the file **`LTRCCT-2001_Credentials.txt`** located on the **Desktop** of your lab machine.
+  Open the file **`LTRCCT-2001_Credentials_PODXXX.txt`** located on the **Desktop** of your lab machine.
 
 
 | Role | Username | Password |
@@ -96,7 +96,7 @@ Your pod has been pre-assigned to a desktop. Please use **one** of the following
 ---
 
 !!! info "Action Required — Webex Space"
-    Before starting the labs, post a message in the **Webex space assigned for this lab**
+    Before starting labs, post a message in the **Webex space assigned for this lab**
     with your **Pod ID + Full Name** (e.g., `Pod 001 — Jane Doe`).
 
     This allows proctors to track assignments and assist you faster throughout the session.
@@ -126,6 +126,7 @@ If you are unable to place test calls from your mobile device, you can use the *
 
 !!! tip "Earbuds Available at Your Seat"
     A pair of wired earbuds has been provided at your workstation, use them if needed to place calls through the **Webex App** or to handle interactions as an Agent during **Lab 3**.
+    🎧 **Keep them — they're yours to take home!**
 
 
 ### 3.3 Lab Quick Links

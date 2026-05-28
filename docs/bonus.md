@@ -101,7 +101,7 @@ volume, Handle Time, and Calls with Suggested Responses.
 ### 1.1 Review Completed Interactions
 
 1. Go back to the **Supervisor Desktop**.
-2. In the left panel, click **Monitor* → **Interactions** → **Completed**.
+2. In the left panel, click **Monitor** → **Interactions** → **Completed**.
 
 !!! Important "New AI QM KPIs"
     | KPI | Description |

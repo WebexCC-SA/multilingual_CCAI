@@ -43,7 +43,7 @@ is to make that possible.
 
 ## Phase 1: Creating an Autonomous AI Agent
 
-### 1.1 Access Control Hub & AI Agent Studio
+### 1.1 Access Collaboration Control Hub & AI Agent Studio
 
 1. Using **Chrome**, select the **Admin_Lab Chrome Profile** to open a new window.
 
@@ -55,12 +55,12 @@ is to make that possible.
         easier. Make sure you are using your **POD credentials** since all students are
         sharing the same tenant!
     
-    ???- tip "See how to access Control Hub"
+    ???- tip "See how to access Collaboration Control Hub"
         <figure markdown>
-            ![Launch Control Hub](./assets/launching_control_hub.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+            ![Launch Collaboration Control Hub](./assets/launching_control_hub.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
         </figure>
 
-3. In the left panel on Control Hub, navigate to **Services > Contact Center** to open
+3. In the left panel on Collaboration Control Hub, navigate to **Services > Contact Center** to open
    the Webex Contact Center administration.
 
     !!! note "Important"
@@ -72,7 +72,7 @@ is to make that possible.
 
     ???- tip "See how to navigate to AI Agent Studio"
         <figure markdown>
-            ![Control Hub AI Agent Launch](./assets/ControlHubAIAgentLaunch.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
+            ![Collaboration Control Hub AI Agent Launch](./assets/ControlHubAIAgentLaunch.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
         </figure>
 
 ---
@@ -289,7 +289,7 @@ Now we will create the **Actions** for this AI Agent. First, we need to launch
 **Webex Connect**, where the Action flows will be created and used inside the
 Autonomous AI Agent.
 
-1. Navigate to **Control Hub > Contact Center > Quick Links > Webex Connect** to
+1. Navigate to **Collaboration Control Hub > Contact Center > Quick Links > Webex Connect** to
    launch a new Chrome tab.
 
 2. In Webex Connect, locate your Service named **PodXXX_LTRCCT2001_CUMULUS** and click to enter it.
@@ -742,7 +742,7 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
 
 ### 3.1 Export & Import the Voice Flow
 
-1. Navigate to **Control Hub > Contact Center > Flows**.
+1. Navigate to **Collaboration Control Hub > Contact Center > Flows**.
 
 2. Find the flow **ADMIN_TEMPLATE_UseCase1_CumulusScheduling**, click on the **dots**
    on the right and select **Export** to save the JSON file to your computer.
@@ -752,7 +752,7 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
             ![Export Voice Flow](./assets/ExportVoiceFlow.gif){ loading=lazy style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" }
         </figure>
 
-3. In **Control Hub > Flows**, click **Manage Flows**, then **Create Flows** from
+3. In **Collaboration Control Hub > Flows**, click **Manage Flows**, then **Create Flows** from
    the dropdown menu.
 
 4. In the new window, choose **Import Flow** and select the JSON file from the
@@ -774,8 +774,22 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
 
 1. Verify **Edit Mode** is **ON** on the top toolbar.
 
+!!! tip "You're Testing Something New! 🚀"
+    In this flow, you have access to a **new autonomous model** (beta).
 
-2. Find the node **VAV2** *(VirtualAgentV2)* and click on it to edit.
+    This is the **AI Agent node** named **"Concierge"** — when you place your test call, 
+    the **Concierge will answer** and handle the interaction autonomously.
+
+    No manual routing rules needed — it will:
+
+    - 🌐 **Automatically detect** the customer's language
+    - 🔀 **Route the interaction** based on the request and detected language
+
+
+2. Find the node **VirtualAgent_UseCase1Cumulus** and click on it to edit.
+!!! danger "Important – Correct Node Selection"
+    Select the **Virtual Agent** node on the **right side** of the flow.  
+    ❌ Do **not** modify the **Concierge** node — they look similar but serve different purposes.
 
 3. In the **Virtual Agent** dropdown, select your Autonomous AI Agent:
 
@@ -815,7 +829,7 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
 
 ### 3.3 Configure the Channel
 
-1. In **Control Hub > Contact Center**, find **Channels**.
+1. In **Collaboration Control Hub > Contact Center**, find **Channels**.
 
 2. Find your Channel **PodXXX_Cumulus_Voice** and click to edit. Configure as follows:
 

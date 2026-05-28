@@ -43,9 +43,9 @@ In this phase, you will provision the "Brain" of the agent-assist experience. We
 
 ### 1.1 Create the English Knowledge Base
 
-1. Login to **Control Hub** with your admin credentials.
+1. Login to **Collaboration Control Hub** with your admin credentials.
 
-2. Navigate to **Control Hub > Contact Center > Overview**. Scroll down to the **Quick Links**
+2. Navigate to **Collaboration Control Hub > Contact Center > Overview**. Scroll down to the **Quick Links**
    section and open **Webex AI Agents**. You are now in the **AI Agent Studio**.
 
 3. Navigate to the **third tab** on the left labeled **Knowledge**.
@@ -412,7 +412,7 @@ Use the built-in **Preview** tool in the AI Agent Studio to simulate a live chat
 Now that your AI Assistant is provisioned, we must link it to your English and Spanish queues
 to enable Real-time Assist.
 
-1. Log in to **Control Hub** with your admin credentials.
+1. Log in to **Collaboration Control Hub** with your admin credentials.
 
 2. Navigate to **Contact Center > Desktop Experience > AI Features**.
 
@@ -540,7 +540,7 @@ upper right and configure as follows:
 
 ### 3.4 Configure the Channel
 
-1. In **Control Hub > Contact Center**, find **Channels**.
+1. In **Collaboration Control Hub > Contact Center**, find **Channels**.
 
 2. Find your Channel **PodXXX_Cumulus_Voice** and click to edit. Configure as follows:
 
@@ -566,7 +566,7 @@ the **AI Assistant** in action.
 
 Log in with your assigned **Agent credentials** in the Agent Desktop.
 
-> 🔗 The URL is found in **Control Hub > Contact Center > Overview > Quick Links > Desktop**.
+> 🔗 The URL is found in **Collaboration Control Hub > Contact Center > Overview > Quick Links > Desktop**.
 > Copy this link and paste it in the **Google Chrome profile** for your agent.
 
 ---

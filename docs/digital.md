@@ -4,7 +4,7 @@
 
 | # | Task | Duration |
 |---|---|---|
-| 1 | Control Hub Foundation | 15 min |
+| 1 | Collaboration Control Hub Foundation | 15 min |
 | 2 | AI Agent Studio – The Digital Duo | 15 min |
 | 3 | Webex Connect – Flow Orchestration | 15 min |
 | 4 | Web Asset & W3Schools Simulation | 10 min |
@@ -30,11 +30,11 @@ This isn't just a lab; this is the future of patient care. Let's build it.
 
 ---
 
-## Phase 1: Control Hub Foundation
+## Phase 1: Collaboration Control Hub Foundation
 
 ### 1.1 Channel Configuration
-1. Login to Control hub with your Admin Credentials:
-2. Navigate to **Control Hub > Contact Center > Customer Experience > Channels**
+1. Login to Collaboration Control hub with your Admin Credentials:
+2. Navigate to **Collaboration Control Hub > Contact Center > Customer Experience > Channels**
 3. Click **Create Channel** and configure as follows:
 
     | Field | Value |
@@ -60,7 +60,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
 
 ---   
 
-1. Navigate to **Control Hub > Contact Center > Customer Experience > Survey Configuration**
+1. Navigate to **Collaboration Control Hub > Contact Center > Customer Experience > Survey Configuration**
 2. Click **Create New Survey** and select **Digital Survey** and configure as follows:
 
     **Summary**
@@ -124,7 +124,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
 
 ## Phase 2: AI Agent Studio – The "Digital Duo"
 
-Navigate to **Control Hub > Contact Center > Customer Experience > AI Agent** and
+Navigate to **Collaboration Control Hub > Contact Center > Customer Experience > AI Agent** and
 click on the black button **Build your AI Agent**.
 
 
@@ -369,7 +369,7 @@ In this phase, you will "activate" the brain of Cumulus Hospital. You will map t
 
 ### 3.1 Navigate to Webex Connect
 
-Go to **Control Hub > Contact Center > Quick Links > Digital Channels > Webex Connect**
+Go to **Collaboration Control Hub > Contact Center > Quick Links > Digital Channels > Webex Connect**
 and navigate to your own service: **PodXXX_LTRCCT2001_CUMULUS**.
 
 !!! warning "Remeber to replace XXX with your PodID"
@@ -631,7 +631,7 @@ Click the blue **Make Live** button, select your asset **`PodXXX_Cumulus_WebChat
     and saved it as **Cumulus_Hospital.png** on your desktop (See [Step 1.2 — Multilingual Survey Creation](#12-multilingual-survey-creation)).
 
 
-Navigate to **Control Hub > Contact Center > Digital Settings > Web Chat Assets** and locate the asset
+Navigate to **Collaboration Control Hub > Contact Center > Digital Settings > Web Chat Assets** and locate the asset
 **PodXXX_Cumulus_WebChat**, and click on it to open the configuration settings:
 
 **Asset Settings**
@@ -786,7 +786,7 @@ Click **Run** and confirm the page is branded with Cumulus HealthCare informatio
 
 ### 4.5 Copy Web Chat Installation Script
 
-Go to **Control Hub > Contact Center > Digital Settings > Web Chat Assets**.
+Go to **Collaboration Control Hub > Contact Center > Digital Settings > Web Chat Assets**.
 Select your asset **PodXXX_Cumulus_WebChat**, navigate to the **Installation** tab,
 and click **Copy**.
 

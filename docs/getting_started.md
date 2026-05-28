@@ -135,7 +135,7 @@ Bookmark these URLs — you will use them throughout all labs.
 
 | Tool | URL |
 |---|---|
-| **Control Hub** | [admin.webex.com](https://admin.webex.com) |
+| **Collaboration Control Hub** | [admin.webex.com](https://admin.webex.com) |
 | **Agent / Supervisor Desktop** | [desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com/?ciClusterId=P0A1) |
 
 ## 4 Lab Environment — Pre-Configured Components

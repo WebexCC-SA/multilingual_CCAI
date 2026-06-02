@@ -674,8 +674,6 @@ existing template.
 
 **Save changes**
 
-5. In the **Actions** tab, disable the system default action **Agent Handover**, this AI Agent does not transfer calls to a human agent.
-
 ---
 
 ### 2.8 Test the AI Agent — Full Actions Validation

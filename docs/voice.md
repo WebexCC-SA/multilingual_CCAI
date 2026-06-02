@@ -251,6 +251,19 @@ will be used by our AI Agent.
         Each student has their own Knowledge Base. Selecting the wrong one will break
         another student's lab.
 
+
+---
+
+
+### 1.6 Disable Agent Handover
+
+This use case is designed as a **fully automated service** — there will be 
+no option for customers to escalate to a live agent.
+
+To disable this option:
+
+1. Navigate to the **Actions** tab in the AI Agent configuration.
+2. **Uncheck** the **Agent Handover** option.
 3. Click **Save**, then click **Publish**. Add a note "V1" in the Publish window and click
    **Publish** again.
 
@@ -282,6 +295,7 @@ will be used by our AI Agent.
 
 
 ## Phase 2: Building the Actions
+
 
 ### 2.1 Create the Webex Connect Flow - customer_details
 

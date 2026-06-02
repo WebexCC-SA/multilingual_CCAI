@@ -584,6 +584,7 @@ existing template.
         | **Entity Name** | Time_slot |
         | **Entity Type** | Date |
         | **Entity Description** | Date for the appointment chosen by the customer. Use the format YYYY-MM-DD |
+        | **Value** | YYYY-mm-dd |
         | **Setting** | ✅ Required |
 
         ??? note "See Example - Entity 4: Time_slot"

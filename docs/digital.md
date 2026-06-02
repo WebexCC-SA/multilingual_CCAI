@@ -68,7 +68,7 @@ This isn't just a lab; this is the future of patient care. Let's build it.
     | Field | Value |
     |---|---|
     | **Name** | PodXXX_Cumulus_Survey |
-    | **Languages** | English (Default) · Spanish – Latin America (español) |
+    | **Languages** | English (Default) & Spanish – Latin America (español) |
 
 3. click **next**
 

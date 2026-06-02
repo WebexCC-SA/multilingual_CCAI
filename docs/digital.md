@@ -632,7 +632,7 @@ Click the blue **Make Live** button, select your asset **`PodXXX_Cumulus_WebChat
 
 
 Navigate to **Collaboration Control Hub > Contact Center > Digital Settings > Web Chat Assets** and locate the asset
-**PodXXX_Cumulus_WebChat**, and click on it to open the configuration settings:
+**PodXXX_Cumulus_WebChat** (replace XXX for your POD number), and click on it to open the configuration settings:
 
 **Asset Settings**
 

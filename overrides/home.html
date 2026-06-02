@@ -1,0 +1,244 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<style>
+
+    :root {
+        --md-primary-fg-color: #07182D;
+        --md-primary-fg-color--light: #07182D;
+        --md-primary-fg-color--dark: #07182D;
+        --md-default-bg-color: #07182D;
+    }
+
+    .md-container {
+        height: 100%;
+        background: var(--md-primary-fg-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .md-main {
+        flex-grow: 0;
+        height: 0;
+        background: var(--md-primary-fg-color);
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-container {
+        background: var(--md-primary-fg-color);
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .tx-hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem;
+        color: white;
+    }
+
+    /* LEFT SIDE */
+
+    .tx-hero__content {
+        flex: 1;
+        max-width: 520px;
+    }
+
+    .tx-hero__content h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: white;
+        line-height: 1.1;
+    }
+
+    .tx-hero__content p {
+        font-size: 0.98rem;
+        line-height: 1.5;
+        font-weight: 300;
+        opacity: 0.9;
+        margin-bottom: 1.8rem;
+        color: white;
+    }
+
+    /* BUTTON */
+
+    .tx-hero .md-button--primary {
+        background: white;
+        color: black;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 30px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        transition: all 0.2s ease;
+    }
+
+    .tx-hero .md-button--primary:hover {
+        background: #00c3ff;
+        color: black;
+    }
+
+    /* RIGHT SIDE IMAGE */
+
+    .tx-hero__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tx-hero__image img {
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+        object-fit: contain;
+        opacity: 0.95;
+    }
+
+    /* REMOVE SIDEBARS */
+
+    @media screen and (min-width: 60em) {
+
+        .md-sidebar--secondary {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 76.25em) {
+
+        .md-sidebar--primary {
+            display: none;
+        }
+    }
+
+    /* MOBILE */
+
+    @media screen and (max-width: 960px) {
+
+        .tx-container {
+            min-height: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .tx-hero {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
+        }
+
+        .tx-hero__content h1 {
+            font-size: 1.9rem;
+        }
+
+        .tx-hero__content p {
+            font-size: 0.92rem;
+        }
+
+        .tx-hero__image img {
+            max-width: 220px;
+        }
+    }
+
+    /* FADE ANIMATION */
+
+    .hold {
+        animation: fadein;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadein {
+
+        0% {
+            opacity: 0;
+        }
+
+        90% {
+            opacity: .5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #six {
+        animation-duration: 600ms;
+        opacity: 0;
+        animation-delay: 0.5s;
+    }
+
+</style>
+
+<!-- HERO SECTION -->
+
+<section class="tx-container">
+
+    <div class="md-grid md-typeset">
+
+        <div class="tx-hero">
+
+            <!-- LEFT SIDE -->
+
+            <div class="tx-hero__content">
+
+                <h1>LTRCCT-2001</h1>
+
+                <p>
+                    Demystifying Multilingual Omnichannel Experiences
+                    with Webex Contact Center AI
+                </p>
+
+                <div id="six" class="hold">
+
+                    <a href="overview/"
+                       title="{{ page.next_page.title | striptags }}"
+                       class="md-button md-button--primary">
+
+                        Get started
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="tx-hero__image">
+
+                <img
+                    src="./template_assets/exclamacion.png"
+                    draggable="false"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

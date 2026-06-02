@@ -890,7 +890,7 @@ Inside **PodXXX_UseCase1_CumulusScheduler** verify the following:
 
 Dial your assigned **Channel number** from your mobile device or Webex App. *(you can find it under the lab access instructions)*.
 
-> 🔗 You can use your **cell phone** or log in to the **Webex App** using the additional
+> 🔗 You can use your **cell phone** or log in to the **Webex App** using the supervior
 > user assigned to your POD to make the call.
 
 `Note: For detailed guidance, refer to the Getting Started section.`

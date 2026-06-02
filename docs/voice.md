@@ -899,7 +899,7 @@ Dial your assigned **Channel number** from your mobile device or Webex App. *(yo
 
 **Step 2 — Language Selection**
 
-When the IVR prompts for language, press **1 for English**.
+When the concierge prompts for language, answer **I´m ok with English**.
 
 ---
 
@@ -933,18 +933,6 @@ When the IVR prompts for language, press **1 for English**.
 
 ### 4.2 Spanish Path Validation
 
-???+ warning "⚠️ Before You Begin — Configure Your Browser for Spanish"
-    It is recommended that you configure your browser environment to support
-    Spanish before starting this path. This ensures the Agent Desktop correctly
-    reflects the Spanish locale settings.
-
-    1. In **Chrome**, click the **three-dot menu** → **Settings**.
-    2. In the search bar, type `Language`.
-    3. Locate **Spanish** in the language list. If it is not set as the primary
-       language, click the **three dots** next to it and select **Move to the top**.
-    4. **Reload** your browser page to apply the changes.
-
----
 
 **Step 1 — Initiate Call**
 
@@ -954,7 +942,7 @@ Dial your assigned **Channel number** from your mobile device or Webex App. *(yo
 
 **Step 2 — Language Selection**
 
-When the IVR prompts for language, press **2 for Spanish**.
+When the concierge prompts for language, answer **Quiero hablar en español**.
 
 ---
 

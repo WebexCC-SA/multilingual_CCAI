@@ -316,12 +316,12 @@ Use the built-in **Preview** tool in the AI Agent Studio to simulate a live chat
         | Role | Message |
         |---|---|
         | 🤖 **Prompt** | Hi, how can I help you? |
-        | 👤 **User** | I need help with MRI with policy |
-        | 🤖 **Prompt** | To assist you with MRI coverage under your BCBS policy, may I please have the patient's name and the specific BCBS policy code? This will help me provide accurate coverage and pre-authorization information. |
-        | 👤 **User** | Sophie, BCBS-101 |
-        | 🤖 **Prompt** | For Sophie with BCBS-101 policy, MRI coverage is 70%, and pre-authorization is required. Could you please provide Sophie's phone number so I can send the pre-authorization form via SMS? |
+        | 👤 **User** | I need help with MRI with policy BCBS-101 |
+        | 🤖 **Prompt** | For MRI under BCBS-101 policy, coverage is 70% and pre-authorization is required. May I have the patient's name and phone number to send the pre-authorization form via SMS? |
+        | 👤 **User** | Sophie |
+        | 🤖 **Prompt** | Thank you, Sophie. Could you please provide the patient's phone number so I can send the MRI pre-authorization form via SMS? |
         | 👤 **User** | *Enter your phone number (include the + country code)* |
-        | 🤖 **Prompt** | The pre-authorization form for Sophie's MRI under BCBS-101 has been sent to the provided phone number. Please check if any other insurance forms are needed, and I can assist with sending those as well. |
+        | 🤖 **Prompt** | The MRI pre-authorization form has been sent to Sophie's phone number. Please check if the patient requires any other insurance forms or assistance. |
         | 👤 **User** | I need also the patient registration form |
         | 🤖 **Prompt** | I can send the Patient Registration Form to Sophie. Could you please confirm the patient's phone number to send the form via SMS? |
         | 👤 **User** | *Enter your phone number (include the + country code)* |

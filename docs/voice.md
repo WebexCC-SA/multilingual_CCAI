@@ -500,7 +500,7 @@ existing template.
 3. Go back to **Services** and find your Service named **PodXXX_LTRCCT2001_CUMULUS**. Enter it,
    navigate to **Flows**, and click **Create Flow**.
 
-4. Fill in the name `UseCase1_AIAgent_create_appointment`, select "Upload a flow" from "Method" and select the JSON file you just exported to import it. Click **Create**.
+4. Fill in the name `UseCase1_AIAgent_create_appointment`, select "Upload a flow" from "Method" and select the .workflow file you just exported to import it. Click **Create**.
 
 
 5. Wait until the flow opens. Click **Parse** and **Save** on the first node.
